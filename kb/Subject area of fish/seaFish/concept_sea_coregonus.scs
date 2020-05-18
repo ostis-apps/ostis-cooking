@@ -1,0 +1,63 @@
+concept_sea_coregonus <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Морской сиг ](*<-lang_ru;;*);
+      [ Sea coregonus ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Морской сиг)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sea_salmonidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> [ Морской сиг - это представитель <b><sc_element sys_idtf="concept_family_sea_salmonidae"> семейства морские лососёвые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/coregonus.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_sea_coregonus; concept_tropical_fish; concept_pacific_ocean; concept_indian_ocean;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Морской сиг является тропическим представителем и обитает в Тихом, Индийском океанах. ](*<-lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение ( Морской сиг, тропическая рыба, Тихий океан, Индийский океан )] (* <- lang_ru;; *);;
+   
+*);;
+
+concept_sea_coregonus => nrel_kkal : 144_kkal
+(*
+	=> nrel_main_idtf: [144 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_sea_coregonus => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_sea_coregonus => nrel_protein_content : 18_g
+(*
+	=> nrel_main_idtf: [18 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_sea_coregonus => nrel_fats_content : 5_g
+(*
+	=> nrel_main_idtf: [5 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+ concept_sea_coregonus -> rrel_example: [ Мясо морского сига богато витамином PP, а также микроэлементами железа, цинка и хрома. ](* <- lang_ru;;*);;
+ concept_sea_coregonus => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;

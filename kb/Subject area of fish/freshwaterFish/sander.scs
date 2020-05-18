@@ -1,0 +1,99 @@
+concept_sander<-sc_node_not_relation;
+=> nrel_main_idtf:
+
+      [Судак]
+      (*<-lang_ru;;*);
+
+      [sander]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+
+      [Опр.(Судак)] (* <- lang_ru;; *);;
+
+    => nrel_using_constants: {
+
+	 concept_representative;
+     concept_family_percidae
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+        [ Судак - это представитель <b><sc_element sys_idtf="concept_family_percidae"> семейства окуневые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   *);
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/sander.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+
+      [ Утверждение ( Судак, характерная особенность, наличие, челюсть, крупный зуб, клыкообразный зуб, самец, самка) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+
+  	concept_characteristic_feature;
+    concept_availability;
+	  concept_jaw;
+    concept_large_tooth;
+    concept_canine_tooth;
+    concept_male;
+    concept_female
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+[Характерной особенностью судаков является наличие на челюсти крупных клыкообразных зубов, которые у самцов больше, чем у самок. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+statement -> ...(*
+    -> rrel_key_sc_element: concept_sander; concept_tropical_fish; concept_sarglan_lake; concept_lake_red; concept_kesey_lake; concept_chum_lake; concept_volga_lake;;
+    <= nrel_sc_text_translation:...(*
+            -> [ Судак относится к теплолюбивым рыбам и обитает в теплых водах озера Сарглан, озера Красное, озера Кизи, озеро Кета, река Волга и других. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Судак, тропическая рыба, озеро Сарглан, озеро Красное, озеро Кизи, озеро Кета, река Волга)](*<- lang_ru;;*);;
+*);;
+
+concept_sander => nrel_kkal : 140_kkal
+(*
+	=> nrel_main_idtf: [140 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_sander => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_sander => nrel_protein_content : 22_g
+(*
+	=> nrel_main_idtf: [22 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_sander => nrel_fats_content : 6_g
+(*
+	=> nrel_main_idtf: [6 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+concept_sander -> rrel_example: [ Мясо судака насыщенно витаминами А, С, Е, D, РР,  а также группы В: B1, B3, B6, B9, B12 и микроэлементами цинка. ](* <- lang_ru;; *);;
+concept_sander => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;
+
+concept_sander -> rrel_example: [Судак является довольно ценной промысловой рыбой.](* <- lang_ru;; *);;
+
+concept_sander <= nrel_subdividing: ...
+(*  		
+		<-concept_baked_sander;;
+		<-concept_boiled_sander;;
+		<-concept_fried_sander;;	
+*);;

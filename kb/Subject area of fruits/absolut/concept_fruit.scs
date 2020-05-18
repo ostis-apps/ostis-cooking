@@ -1,0 +1,39 @@
+concept_fruit
+	<-sc_node_not_relation;
+	=>nrel_idtf:[fruit] (* <- lang_en;; *);
+	=>nrel_main_idtf:[фрукт] (* <- lang_ru;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_fruit;;
+	<= nrel_sc_text_translation: ...(*->[Фрукт - сочный съедобный плод растения.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (фрукт)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_fruit;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Фрукты являются важной составляющей пищи человека и многих животных.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (фрукт)](*<- lang_ru;;*);;
+	
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_fruit;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//fruit.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (фрукт)](*<- lang_ru;;*);;
+*);;
+
+	
+concept_fruit<= nrel_subdividing:
+{
+	concept_stone_fruit;
+	concept_pome_fruit;
+	concept_citrus_fruit;
+	concept_exotic_fruit
+};;
+
+

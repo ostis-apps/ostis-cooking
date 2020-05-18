@@ -1,0 +1,88 @@
+concept_clupea <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Сельдь ]
+      (*<-lang_ru;;*);
+      [ Clupea ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Сельдь )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_clupeidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Сельдь - это представитель <b><sc_element sys_idtf="concept_family_salmonidae"> семейства сельдевые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   *);
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/clupea.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Сельдь, сжатое тело, бок, умеренная чешуя, крупная чешуя )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_compressed_body; 
+    concept_side;
+    concept_moderate_scales;
+    concept_large_scales
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ У сельди сжатое с боков тело, чешуя умеренная или крупная. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:concept_clupea; concept_tropical_fish; concept_onega_lake; concept_white_lake; concept_red_lake;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Сельдь относится к теплолюбивым рыбам и обитает в озере Онежском, озере Белом, озере Красном и других. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Сельдь , тропическая рыба, озеро Онежское, озеро Белое, озеро Красное )] (* <-lang_ru;; *);;
+   
+*);;
+
+concept_clupea => nrel_kkal : 161_kkal
+(*
+	=> nrel_main_idtf: [161 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_clupea => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_clupea => nrel_protein_content : 16_g
+(*
+	=> nrel_main_idtf: [16 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_clupea => nrel_fats_content : 11_g
+(*
+	=> nrel_main_idtf: [11 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+ concept_clupea -> rrel_example: [ Мясо сельди насыщенно витаминами А, С, Е и группы B: B1, B2, B3, B5, B6, B9, B12, а также микроэлементами цинка, йода, хлора и магния. ](* <- lang_ru;; *);;
+ concept_clupea => nrel_healthy_fat_content: (concept_fat <- concept_8_14);;
+
+ concept_clupea -> rrel_example: [ Пищей сельди являются различные мелкие животные и ракообразные. ](* <- lang_ru;; *);;
+ concept_clupea <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_clupea;;
+		<-concept_boiled_clupea;;
+		<-concept_fried_clupea;;	
+*);;

@@ -1,0 +1,65 @@
+concept_mytilus <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Мидия ](*<-lang_ru;;*);
+      [ Mytilus ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Мидия )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sea_mollusca;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> 
+        [ Мидия - это представитель <b><sc_element sys_idtf="concept_family_sea_mollusca">семейства морские моллюски</b></sc_element> .] 
+        (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+			->rrel_example: "file://PICTURES/mytilus.jpg"(*
+				=>nrel_format:format_jpg;;
+			*);;
+        *);;
+    *);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	concept_mytilus; concept_tropical_fish; concept_japanese_sea; concept_sea_of_okhotsk; concept_pacific_ocean; concept_world_ocean; concept_black_sea; concept_bering_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Мидия является тропическим представителем и обитает в Мировом и Тихом океанах, Черном, Японском, Охотском и Беринговом морях. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение ( Мидия, тропическая рыба, Японское море, Тихий океан, Мировой океан, Черное море, Охотское море, Берингово море )] (*<- lang_ru;;*);;
+   
+*);;
+
+concept_mytilus => nrel_kkal : 77_kkal
+(*
+	=> nrel_main_idtf: [77 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_mytilus => nrel_carbohydrates_content : 3_g
+(*
+	=> nrel_main_idtf: [3 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_mytilus => nrel_protein_content : 12_g
+(*
+	=> nrel_main_idtf: [12 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_mytilus => nrel_fats_content : 2_g
+(*
+	=> nrel_main_idtf: [2 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+ concept_mytilus -> rrel_example: [ Мясо мидии богато витаминами В1, В2, С, Е, РР, а также микроэлементами магния, кальция, меди и цинка. ](* <- lang_ru;;*);;
+ concept_mytilus => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

@@ -1,0 +1,64 @@
+concept_teuthida <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Кальмар ](*<-lang_ru;;*);
+      [ Teuthida ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Кальмар )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sea_mollusca;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Кальмар - это представитель <b><sc_element sys_idtf="concept_family_sea_mollusca">семейства морские моллюски</b></sc_element> .] 
+        (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/teuthida.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	concept_teuthida; concept_tropical_fish; concept_black_sea; concept_pacific_ocean; concept_meriterranean_sea; concept_north_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Кальмар является тропическим представителем и обитает в Cредиземном море, Северном море, Тихом океане, Черном море. ](*<-lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение ( Кальмар, тропическая рыба, Тихий океан, Черное море, Средиземное море, Северное море. )] (* <- lang_ru;; *);;
+   
+*);;
+
+concept_teuthida => nrel_kkal : 98_kkal
+(*
+	=> nrel_main_idtf: [98 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_teuthida => nrel_carbohydrates_content : 2_g
+(*
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_teuthida => nrel_protein_content : 19_g
+(*
+	=> nrel_main_idtf: [19 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_teuthida=> nrel_fats_content : 3_g
+(*
+	=> nrel_main_idtf: [3 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+ concept_teuthida -> rrel_example: [ Мясо кальмара богато витаминами В1, В2, В3, В6, В9, Е и РР. ](* <- lang_ru;;*);;
+ concept_teuthida => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

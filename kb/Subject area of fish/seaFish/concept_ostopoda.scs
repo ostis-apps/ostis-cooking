@@ -1,0 +1,65 @@
+concept_ostopoda <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Осьминог ](*<-lang_ru;;*);
+      [ Ostopoda ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Осьминог )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sea_mollusca;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> 
+        [ Осьминог - это представитель семейства <b><sc_element sys_idtf="concept_family_sea_mollusca">семейства морские моллюски</b></sc_element> .] 
+        (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/ostopoda.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	concept_ostopoda; concept_tropical_fish; concept_black_sea; concept_sea_of_okhotsk; concept_pacific_ocean; concept_world_ocean; concept_bering_sea; concept_cave;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Осьминог является тропическим представителем и обитает в пещерах Мирового и Тихого океанов, Черном, Охотском и Беринговом морях.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение ( Осьминог, тропическая рыба, Тихий океан, Мировой океан, Черное море, Охотское море, Берингово море, пещера )](*<- lang_ru;;*);;
+   
+*);;
+
+concept_ostopoda => nrel_kkal : 73_kkal
+(*
+	=> nrel_main_idtf: [73 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_ostopoda => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_ostopoda => nrel_protein_content : 18_g
+(*
+	=> nrel_main_idtf: [18 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_ostopoda => nrel_fats_content : 1_g
+(*
+	=> nrel_main_idtf: [1 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+
+ concept_ostopoda -> rrel_example: [ Мясо осьминога богато витаминами А, В1, В2, В3, В6, В12, С, Е, РР, а также микроэлементами магния и калия. ](* <- lang_ru;;*);;
+ concept_ostopoda => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

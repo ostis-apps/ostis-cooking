@@ -1,0 +1,64 @@
+concept_yellow_sole <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Камбала желтопёрая ](*<-lang_ru;;*);
+      [ Yellow sole ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Камбала желтопёрая )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_pleuronectidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Камбала желтопёрая - это представитель <b><sc_element sys_idtf="concept_family_pleuronectidae"> семейства камбаловые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/yellow_sole.png"(*
+                    =>nrel_format:format_png;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	concept_yellow_sole; concept_arctical_fish; concept_japanese_sea; concept_sea_of_okhotsk; concept_bering_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Камбала желтоперая относится к холоднолюбивым рыбам и обитает в Японском, Охотском и Беринговом морях. ](*<-lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение ( Камбала желтопёрая, холоднолюбивая рыба, Японское море, Охотское море, Берингово море )] (* <- lang_ru;; *);;
+   
+*);;
+
+concept_yellow_sole => nrel_kkal : 80_kkal
+(*
+	=> nrel_main_idtf: [80 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_yellow_sole => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_yellow_sole => nrel_protein_content : 15_g
+(*
+	=> nrel_main_idtf: [15 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_yellow_sole => nrel_fats_content : 3_g
+(*
+	=> nrel_main_idtf: [3 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+ concept_yellow_sole -> rrel_example: [ Камбала желтоперая составляет большую часть рыбы, употребляемой в пищу, у датчан. ](* <- lang_ru;; *);;
+ concept_yellow_sole => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

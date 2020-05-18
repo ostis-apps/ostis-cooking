@@ -1,0 +1,89 @@
+concept_salvelinus <- sc_node_not_relation;
+=> nrel_main_idtf:
+
+      [ Голец ]
+      (*<-lang_ru;;*);
+
+      [ Salvelinus ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+
+      [Опр.( Голец )] (* <- lang_ru;; *);;
+
+    => nrel_using_constants: {
+
+	 concept_representative;
+     concept_family_salmonidae
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+        [ Голец - это представитель <b><sc_element sys_idtf="concept_family_salmonidae"> семейства лососёвые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   *);
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/salvunus.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+
+      [ Утверждение ( Голец, мелкое пятнышко, светлое пятнышко, тело, горбатое рыло, короткое рыло) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+
+  	concept_fine_speck;
+    concept_light_speck;
+    concept_body;
+    concept_humpback_snout;
+    concept_short_snout
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+[ Голец имеет много мелких светлых пятнышек на теле, горбатое и короткое рыло. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+concept_salvelinus => nrel_kkal : 135_kkal
+(*
+	=> nrel_main_idtf: [135 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_salvelinus => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_salvelinus => nrel_protein_content : 22_g
+(*
+	=> nrel_main_idtf: [22 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_salvelinus => nrel_fats_content : 6_g
+(*
+	=> nrel_main_idtf: [6 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+ concept_salvelinus -> rrel_example: [ Мясо гольца насыщенно витаминами А, Е, В1, В2, В3, В6, В12. ](* <- lang_ru;; *);;
+ concept_salvelinus => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;
+
+ concept_salvelinus -> rrel_example: [ Голец занесен в красную книгу Камчатского края.](* <- lang_ru;; *);;
+
+concept_salvelinus <= nrel_subdividing: ...
+(*  		
+		<-concept_baked_salvelinus;;
+		<-concept_boiled_salvelinus;;
+		<-concept_fried_salvelinus;;	
+*);;

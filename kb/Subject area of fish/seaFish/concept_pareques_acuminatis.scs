@@ -1,0 +1,60 @@
+concept_pareques_acuminatis=>nrel_idtf: [ Pareques acuminatis ](*<-lang_en;;*);;
+concept_pareques_acuminatis=>nrel_main_idtf: [ Рифовая обиспа ](*<-lang_ru;;*);;
+
+concept_pareques_acuminatis <- rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Oпр.(Рифовая обиспа)] (* <- lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		-> [ Рифовая обиспа - это представитель <b><sc_element sys_idtf="concept_family_sciaenidae">семейства горбылевые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	<=nrel_using_constants:...(*
+		-> concept_family_sciaenidae;concept_representative;;
+	*);;
+*);;
+
+concept_pareques_acuminatis <- rrel_key_sc_element: ... (*
+	<-illustration;;<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://PICTURES/pareques_regius.jpg"(*
+			=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_pareques_acuminatis; concept_tropical_fish; concept_warm_water; concept_indian_ocean; concept_black_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Рифовая обиспа относится к теплолюбивым рыбам и обитает в теплых водах Черного моря, Индийского океана. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение( Рифовая обиспа, тропическая рыба, теплая вода, Индийский океан, Черное море )] (* <-lang_ru;; *);;
+   
+*);;
+
+concept_pareques_acuminatis => nrel_kkal : 91_kkal
+(*
+	=> nrel_main_idtf: [91 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_pareques_acuminatis => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_pareques_acuminatis => nrel_protein_content : 16_g
+(*
+	=> nrel_main_idtf: [16 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_pareques_acuminatis => nrel_fats_content : 2_g
+(*
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+
+ concept_pareques_acuminatis -> rrel_example: [ Мясо рифовой обиспы насыщенно витаминами группы В: В1, В2, В6, В12. ](* <- lang_ru;; *);;
+ concept_pareques_acuminatis => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

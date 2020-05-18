@@ -1,0 +1,86 @@
+concept_sardinella <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Сардинелла ]
+      (*<-lang_ru;;*);
+      [ Sardinella ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Сардинелла )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_clupeidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Сардинелла - это представитель <b><sc_element sys_idtf="concept_family_salmonidae"> семейства сельдевые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   *);
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/sardinella.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Сардинелла, палегическая рыба, стайный образ жизни )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_palagean_fish; 
+    concept_schooling
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Сардинелла - это пелагические рыбы, ведущие стайный образ жизни. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:concept_sardinella; concept_tropical_fish; concept_onega_lake; concept_dnepr_river; concept_white_lake; concept_red_lake;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Сардинелла относится к теплолюбивым рыбам и обитает в реке Днепр, озере Онежском, озере Белом, озере Красном и других. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Сардинелла , тропическая рыба,река Днепр, озеро Онежское, озеро Белое, озеро Красное )] (* <-lang_ru;; *);;
+   
+*);;
+
+concept_sardinella => nrel_kkal : 210_kkal
+(*
+	=> nrel_main_idtf: [210 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_sardinella => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_sardinella => nrel_protein_content : 19_g
+(*
+	=> nrel_main_idtf: [19 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_sardinella => nrel_fats_content : 9_g
+(*
+	=> nrel_main_idtf: [9 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+ concept_sardinella -> rrel_example: [ Мясо сардинеллы насыщенно витаминами А, С, Е и группы B: B1, B2, B3, B5, B6, B9, B12, а также микроэлементами цинка, йода, хлора и магния. ](* <- lang_ru;; *);;
+ concept_sardinella => nrel_healthy_fat_content: (concept_fat <- concept_8_14);;
+
+ concept_sardinella -> rrel_example: [ У сардинеллы имеются мясистые выросты вдоль заднего края жаберного отверстия. ](* <- lang_ru;; *);;
+ concept_sardinella <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_sardinella;;
+		<-concept_boiled_sardinella;;
+		<-concept_fried_sardinella;;	
+*);;
