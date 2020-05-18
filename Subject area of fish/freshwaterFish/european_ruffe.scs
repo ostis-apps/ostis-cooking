@@ -1,0 +1,95 @@
+concept_european_ruffe<-sc_node_not_relation;
+=> nrel_main_idtf:
+
+      [Европейский ерш]
+      (*<-lang_ru;;*);
+
+      [Eurapean ruffe]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+
+      [Опр.(Европейский ерш )] (* <- lang_ru;; *);;
+
+    => nrel_using_constants: {
+
+	 concept_representative;
+     concept_family_percidae
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+        [Европейский ерш - это представитель <b><sc_element sys_idtf="concept_family_percidae"> семейства окуневые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   *);
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/ruffee.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+
+      [ Утверждение (Европейский ерш, распостраненный вид, природный ареал, центральная Европа, восточная Европа) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+
+	concept_main_advantage;
+    concept_natural_range;
+	concept_central_europe;
+    concept_east_europe
+
+  };; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+[ Европейский ерш является самым распостраненным из четырех видов, потому что его природный ареал включает центральную и восточную Европу. ](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_european_ruffe -> rrel_example: [Ерш очень неприхотливый, обычно стайный вид, и он очень хорошо чувствует себя в в широком спектре условий окружающей среды.](* <- lang_ru;; *);;
+
+statement -> ...(*
+    -> rrel_key_sc_element: concept_european_ruffe; concept_tropical_fish; concept_sarglan_lake; concept_lake_vauger; concept_lake_red; concept_kesey_lake;;
+    <= nrel_sc_text_translation:...(*
+            -> [ Европейский ерш относится к теплолюбивым рыбам и обитает в теплых водах озера Сарглан, озера Красное, озеро Воже, озера Кизи и других. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Европейский ерш, тропическая рыба, озеро Сарглан, озеро Воже, озеро Красное, озеро Кизи)](*<- lang_ru;;*);;
+*);;
+
+concept_european_ruffe => nrel_kkal : 88_kkal
+(*
+	=> nrel_main_idtf: [88 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_european_ruffe => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_european_ruffe => nrel_protein_content : 18_g
+(*
+	=> nrel_main_idtf: [18 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_european_ruffe => nrel_fats_content : 2_g
+(*
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+concept_european_ruffe -> rrel_example: [ Мясо европейского ерша насыщенно витамином РР и микроэлементами фтора и хлора. ](* <- lang_ru;; *);;
+concept_european_ruffe => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;
+concept_european_ruffe <= nrel_subdividing: ...
+(*  		
+		<-concept_baked_european_ruffe;;
+		<-concept_boiled_european_ruffe;;
+		<-concept_fried_european_ruffe;;	
+*);;

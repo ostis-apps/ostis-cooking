@@ -1,0 +1,66 @@
+concept_ostreidae <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Устрица ](*<-lang_ru;;*);
+      [ Ostreidae ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Устрица )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sea_mollusca;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> 
+        [ Устрица - это представитель <b><sc_element sys_idtf="concept_family_sea_mollusca">семейства морские моллюски</b></sc_element> .] 
+        (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/ostreidae.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	concept_ostreidae; concept_tropical_fish; concept_japanese_sea; concept_sea_of_okhotsk; concept_pacific_ocean; concept_world_ocean; concept_black_sea; concept_bering_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Устрица является тропическим представителем и обитает на мелководье Мирового и Тихого океанов, Черного моря. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение ( Устрица , тропическая рыба, Черное море, Тихий океан, Мировой океан. )](*<- lang_ru;;*);;
+   
+*);;
+
+
+concept_ostreidae => nrel_kkal : 95_kkal
+(*
+	=> nrel_main_idtf: [95 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_ostreidae => nrel_carbohydrates_content : 1_g
+(*
+	=> nrel_main_idtf: [1 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_ostreidae => nrel_protein_content : 14_g
+(*
+	=> nrel_main_idtf: [14 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_ostreidae => nrel_fats_content : 6_g
+(*
+	=> nrel_main_idtf: [6 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+
+ concept_ostreidae -> rrel_example: [ Мясо устрицы богато витаминами А, В1, В2, С, D. ](* <- lang_ru;;*);;
+ concept_ostreidae => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;

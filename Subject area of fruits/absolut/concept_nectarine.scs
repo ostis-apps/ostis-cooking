@@ -1,0 +1,57 @@
+concept_nectarine
+	=>nrel_idtf:[nectarine] (* <- lang_en;; *);
+	=>nrel_main_idtf:[нектарин] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_nectarine;;
+	<= nrel_sc_text_translation: ...(*->[Нектарин - плод подвида персика обыкновенного.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (нектарин)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_nectarine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Нектарину характерна гладкая, как у сливы, кожица.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (нектарин)](*<- lang_ru;;*);;
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_nectarine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Их едят свежими, используют в десертах и джемах, для производства консервированных компотов.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (нектарин, применение)](*<- lang_ru;;*);;
+	
+*);;
+
+
+concept_nectarine=>nrel_sugar_content : 8_g
+(*
+	=> nrel_main_idtf:[8 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+concept_nectarine=>nrel_fiber_content : 1.7_g
+(*
+	=> nrel_main_idtf:[1.7 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_nectarine;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//nectarine.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (нектарин)](*<- lang_ru;;*);;
+*);;
+

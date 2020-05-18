@@ -1,0 +1,60 @@
+concept_selaroides_leptolepis=>nrel_idtf: [ Selaroides leptolepis ](*<-lang_en;;*);;
+concept_selaroides_leptolepis=>nrel_main_idtf: [ Желтополосый крокер ](*<-lang_ru;;*);;
+
+concept_selaroides_leptolepis <- rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Oпр.(Желтополосый крокер)] (* <- lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		-> [ Желтополосый крокер - это представитель <b><sc_element sys_idtf="concept_family_sciaenidae">семейства горбылевые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	<=nrel_using_constants:...(*
+		-> concept_family_sciaenidae;concept_representative;;
+	*);;
+*);;
+
+concept_selaroides_leptolepis <- rrel_key_sc_element: ... (*
+	<-illustration;;<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://PICTURES/selaroides_leptolepis.jpg"(*
+			=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:concept_selaroides_leptolepis; concept_tropical_fish; concept_warm_water; concept_indian_ocean; concept_pacific_ocean; concept_gulf_of_persian;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Желтополосый крокер относится к теплолюбивым рыбам и обитает в теплых водах Индийского и Тихиго океанов, а также в Персидском заливе. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Желтополосый крокер, тропическая рыба, теплая вода, Индийский океан, Тихий океан, Персидский залив)] (* <-lang_ru;; *);;
+   
+*);;
+
+concept_selaroides_leptolepis => nrel_kkal : 88_kkal
+(*
+	=> nrel_main_idtf: [88 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_selaroides_leptolepis => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_selaroides_leptolepis => nrel_protein_content : 18_g
+(*
+	=> nrel_main_idtf: [18 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_selaroides_leptolepis => nrel_fats_content : 2_g
+(*
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+
+ concept_selaroides_leptolepis -> rrel_example: [ Мясо желтополосого крокера насыщенно витаминами группы В: В3, В6, В12. ](* <- lang_ru;; *);;
+ concept_selaroides_leptolepis => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

@@ -1,0 +1,65 @@
+concept_lithophaga <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Морской финик ](*<-lang_ru;;*);
+      [ Lithophada ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Морской финик)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sea_mollusca;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> 
+        [ Морской финик - это представитель <b><sc_element sys_idtf="concept_family_sea_mollusca">семейства морские моллюски</b></sc_element> .] 
+        (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+			->rrel_example: "file://PICTURES/lithophada.jpg"(*
+				=>nrel_format:format_jpg;;
+			*);;
+    	*);;
+	*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	concept_lithophaga; concept_tropical_fish; concept_pacific_ocean; concept_black_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Морской финик является тропическим представителем и обитает на мелководье Черного моря и Тихого океанов. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение ( Морской финик, тропическая рыба, Тихий океан, Черное море )](*<- lang_ru;;*);;
+   
+*);;
+
+concept_lithophaga => nrel_kkal : 93_kkal
+(*
+	=> nrel_main_idtf: [93 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_lithophaga => nrel_carbohydrates_content : 1_g
+(*
+	=> nrel_main_idtf: [1 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_lithophaga => nrel_protein_content : 14_g
+(*
+	=> nrel_main_idtf: [14 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_lithophaga => nrel_fats_content : 5_g
+(*
+	=> nrel_main_idtf: [5 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+
+ concept_lithophaga -> rrel_example: [ Мясо морского финика богато витаминами РР и группы В: В1, В2, В3, В6, В12, а также микроэлементами цинка, калия и магния. ](* <- lang_ru;;*);;
+ concept_lithophaga => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;

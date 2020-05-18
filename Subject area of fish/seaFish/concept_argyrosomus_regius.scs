@@ -1,0 +1,58 @@
+concept_argyrosomus_regius=>nrel_idtf: [ Argurosomus regius ](*<-lang_en;;*);;
+concept_argyrosomus_regius=>nrel_main_idtf: [ Серебристый горбыль ](*<-lang_ru;;*);;
+
+concept_argyrosomus_regius <- rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Oпр.(Серебристый горбыль)] (* <- lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*->[Серебристый горбыль - это представитель <b><sc_element sys_idtf="concept_family_sciaenidae">семейства горбылевые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	<=nrel_using_constants:...(*
+		-> concept_family_sciaenidae;concept_representative;;
+	*);;
+*);
+
+ <- rrel_key_sc_element: ... (*
+	<-illustration;;<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://PICTURES/argyrosomus.jpg"(*
+			=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_argyrosomus_regius; concept_tropical_fish; concept_warm_water; concept_indian_ocean; concept_black_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Серебристый горбыль относится к теплолюбивым рыбам и обитает в теплых водах Черного моря, Индийского океана. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Серебристый горбыль, тропическая рыба, теплая вода, Индийский океан, Черное море )](*<- lang_ru;;*);;
+   
+*);;
+
+concept_argyrosomus_regius => nrel_kkal : 104_kkal
+(*
+	=> nrel_main_idtf: [104 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_argyrosomus_regius => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_argyrosomus_regius => nrel_protein_content : 18_g
+(*
+	=> nrel_main_idtf: [18 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_argyrosomus_regius => nrel_fats_content : 2_g
+(*
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+ concept_argyrosomus_regius -> rrel_example: [ Мясо серебристого горбыля насыщенно витаминами А, В9, В12, РР и С. ](* <- lang_ru;; *);;
+ concept_argyrosomus_regius => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

@@ -1,0 +1,59 @@
+concept_larimichthys =>nrel_idtf: [Larimichthys ](*<-lang_en;;*);;
+concept_larimichthys=>nrel_main_idtf: [ Горбыль желтый ](*<-lang_ru;;*);;
+
+concept_larimichthys <- rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Oпр.( Горбыль желтый )] (* <- lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		-> [ Горбыль желтый - это представитель <b><sc_element sys_idtf="concept_family_sciaenidae">семейства горбылевые</b></sc_element> .] 
+        (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	<=nrel_using_constants:...(*
+		-> concept_family_sciaenidae;concept_representative;;
+	*);;
+*);;
+
+concept_larimichthys <- rrel_key_sc_element: ... (*
+	<-illustration;;<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://PICTURES/larimicuthys.jpg"(*
+			=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_larimichthys; concept_tropical_fish; concept_warm_water; concept_pacific_ocean;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Горбыль желтый относится к теплолюбивым рыбам и обитает в теплых водах Тихиго океанa. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Горбыль желтый, тропическая рыба, теплая вода, Тихий океан)](*<- lang_ru;;*);;
+   
+*);;
+
+concept_larimichthys => nrel_kkal : 123_kkal
+(*
+	=> nrel_main_idtf: [123 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_larimichthys => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_larimichthys => nrel_protein_content : 22_g
+(*
+	=> nrel_main_idtf: [22 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_larimichthys => nrel_fats_content : 6_g
+(*
+	=> nrel_main_idtf: [6 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+ concept_larimichthys -> rrel_example: [ Мясо горбыля желтого насыщенно витаминами А, В1, В2, В5, В12, С, Zn и РР. ](* <- lang_ru;; *);;
+ concept_larimichthys => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;

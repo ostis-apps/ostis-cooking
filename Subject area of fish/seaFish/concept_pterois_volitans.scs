@@ -1,0 +1,59 @@
+concept_pterois_volitans =>nrel_idtf: [ Pterois volitans ](*<-lang_en;;*);;
+concept_pterois_volitans =>nrel_main_idtf: [ Крылатка ](*<-lang_ru;;*);;
+
+concept_pterois_volitans <- rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Oпр.( Крылатка )] (* <- lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		-> [ Крылатка - это представитель <b><sc_element sys_idtf="concept_family_scorpaenidae"> семейства скорпеновые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	<=nrel_using_constants:...(*
+		-> concept_family_scorpaenidae;concept_representative;;
+	*);;
+*);;
+
+concept_pterois_volitans <- rrel_key_sc_element: ... (*
+	<-illustration;;<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://PICTURES/pterois_volitans.jpg"(*
+			=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_pterois_volitans; concept_tropical_fish; concept_warm_water; concept_pacific_ocean; concept_indian_ocean;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Крылатка относится к теплолюбивым рыбам и обитает в теплых водах Тихого и Индийского океанов. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение( Крылатка, тропическая рыба, теплая вода, Тихий океан, Индийский океан)] (* <-lang_ru;; *);;
+   
+*);;
+
+concept_pterois_volitans => nrel_kkal : 91_kkal
+(*
+	=> nrel_main_idtf: [91 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_pterois_volitans => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_pterois_volitans => nrel_protein_content : 15_g
+(*
+	=> nrel_main_idtf: [15 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_pterois_volitans => nrel_fats_content : 2_g
+(*
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+ concept_pterois_volitans -> rrel_example: [ Мясо крылатки насыщенно витаминами В1, В12 и РР. ](* <- lang_ru;; *);;
+ concept_pterois_volitans => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

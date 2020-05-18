@@ -1,0 +1,60 @@
+concept_umbrina=>nrel_idtf: [ Umbrina ](*<-lang_en;;*);;
+concept_umbrina=>nrel_main_idtf: [ Умбрина ](*<-lang_ru;;*);;
+
+concept_umbrina <- rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Oпр.( Умбрина )] (* <- lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		-> [ Умбрина - это представитель <b><sc_element sys_idtf="concept_family_sciaenidae">семейства горбылевые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	<=nrel_using_constants:...(*
+		-> concept_family_sciaenidae;concept_representative;;
+	*);;
+*);;
+
+concept_umbrina <- rrel_key_sc_element: ... (*
+	<-illustration;;<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://PICTURES/umbrina.png"(*
+			=>nrel_format:format_png;;
+		*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	concept_umbrina; concept_tropical_fish; concept_warm_water; concept_indian_ocean; concept_pacific_ocean;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Умбрина относится к теплолюбивым рыбам и обитает в теплых водах Индийского и Тихиго океанов. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Умбрина , тропическая рыба, теплая вода, Индийский океан, Тихий океан)] (* <-lang_ru;; *);;
+   
+*);;
+
+concept_umbrina => nrel_kkal : 88_kkal
+(*
+	=> nrel_main_idtf: [88 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_umbrina => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_umbrina => nrel_protein_content : 18_g
+(*
+	=> nrel_main_idtf: [18 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_umbrina => nrel_fats_content : 2_g
+(*
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+
+ concept_umbrina -> rrel_example: [ Мясо умбрины насыщенно витаминами А, В, С и РР. ](* <- lang_ru;; *);;
+ concept_umbrina => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

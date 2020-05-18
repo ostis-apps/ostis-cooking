@@ -1,0 +1,63 @@
+concept_sea_thunnus <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Морской тунец ](*<-lang_ru;;*);
+      [ Sea thunnus ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Морской тунец)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sea_scomber;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> [ Морской тунец - это представитель <b><sc_element sys_idtf="concept_family_sea_scomber"> семейства морские скумбриевые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/07.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_sea_thunnus; concept_tropical_fish; concept_atlantic_ocean; concept_gulf_of_mexico; concept_mediterranean_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Морской тунец является тропическим представителем и обитает в Атлантическом океане, Мексиканском заливе, Средиземном море. ](*<-lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение ( Морской тунец, тропическая рыба, Атлантический океан, Мексиканский залив, Средиземное море )] (* <- lang_ru;; *);;
+   
+*);;
+
+concept_sea_thunnus => nrel_kkal : 96_kkal
+(*
+	=> nrel_main_idtf: [96 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_sea_thunnus => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_sea_thunnus => nrel_protein_content : 23_g
+(*
+	=> nrel_main_idtf: [23 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_sea_thunnus => nrel_fats_content : 1_g
+(*
+	=> nrel_main_idtf: [1 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+ concept_sea_thunnus -> rrel_example: [ Мясо морского тунца богато витаминами А, D, E. ](* <- lang_ru;;*);;
+ concept_sea_thunnus => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

@@ -1,0 +1,64 @@
+concept_sea_gorbusha <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Морская горбуша ](*<-lang_ru;;*);
+      [ Sea gorbusha ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Морская горбуша)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sea_salmonidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Морская горбуша - это представитель <b><sc_element sys_idtf="concept_family_sea_salmonidae"> семейства морские лососёвые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/sea_gorbusha.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_sea_gorbusha; concept_arctical_fish; concept_pacific_ocean; concept_black_sea; concept_arctic_ocean;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Морская горбуша является арктическим представителем и обитает в Северном Ледовитом океане, Черном море и Тихом океане. ](*<-lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение ( Морская горбуша, арктическая рыба, Северный Ледовитый океан, Средиземное море, Тихий океан, Черное море, )] (* <- lang_ru;; *);;
+   
+*);;
+
+concept_sea_gorbusha => nrel_kkal : 140_kkal
+(*
+	=> nrel_main_idtf: [140 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_sea_gorbusha => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_sea_gorbusha => nrel_protein_content : 20_g
+(*
+	=> nrel_main_idtf: [20 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_sea_gorbusha => nrel_fats_content : 6_g
+(*
+	=> nrel_main_idtf: [6 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+ concept_sea_gorbusha -> rrel_example: [ Мясо морской горбуши богато витаминами А, РР и группы В: В1, В2, В3, В6, В12, а также микроэлементами натрия и магния. ](* <- lang_ru;;*);;
+ concept_sea_gorbusha => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;

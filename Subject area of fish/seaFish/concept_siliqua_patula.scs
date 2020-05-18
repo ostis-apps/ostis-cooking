@@ -1,0 +1,64 @@
+concept_siliqua_patula <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Морской черенок ](*<-lang_ru;;*);
+      [ Siligua patula ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Морской черенок )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sea_mollusca;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Морской черенок - это представитель <b><sc_element sys_idtf="concept_family_sea_mollusca">семейства морские моллюски</b></sc_element> .] 
+        (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/siligua_patula.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	concept_siliqua_patula; concept_arctical_fish; concept_pacific_ocean; concept_world_ocean;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Морской черенок является арктическим представителем и обитает в глубинах Мирового и Тихого океанов. ](*<-lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение ( Морской черенок , арктическая рыба, Тихий океан, Мировой океан )] (* <- lang_ru;; *);;
+   
+*);;
+
+concept_siliqua_patula => nrel_kkal : 98_kkal
+(*
+	=> nrel_main_idtf: [98 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_siliqua_patula => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_siliqua_patula => nrel_protein_content : 22_g
+(*
+	=> nrel_main_idtf: [22 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_siliqua_patula => nrel_fats_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+ concept_siliqua_patula -> rrel_example: [ Мясо морского черенка богато витаминами В1, В2, В3, В6, В12, РР, а также микроэлементами кальция, калия и магния. ](* <- lang_ru;;*);;
+ concept_siliqua_patula => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

@@ -1,0 +1,63 @@
+concept_scophthalmus_kalkan <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Калкан ](*<-lang_ru;;*);
+      [ Scophthalmus kalkan ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Калкан )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_pleuronectidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> [ Калкан - это представитель <b><sc_element sys_idtf="concept_family_pleuronectidae"> семейства камбаловые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/kalkan.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_scophthalmus_kalkan; concept_tropical_fish; concept_black_sea; concept_sea_of_Azov; concept_mediterranean_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Калкан относится к теплолюбивым рыбам и обитает в Азовском море, Черномом море, также она встречается в некоторых районах Средиземного моря. ](*<-lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение ( Калкан, тропическая рыба, Черное море, Азовское море, Средиземное море )] (* <- lang_ru;; *);;
+   
+*);;
+
+concept_scophthalmus_kalkan => nrel_kkal : 92_kkal
+(*
+	=> nrel_main_idtf: [92 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+concept_scophthalmus_kalkan => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_scophthalmus_kalkan => nrel_protein_content : 17_g
+(*
+	=> nrel_main_idtf: [17 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_scophthalmus_kalkan => nrel_fats_content : 2_g
+(*
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+
+ concept_scophthalmus_kalkan -> rrel_example: [ Мясо калкана насыщено витамином Е и витаминами группы В (в особенности B3, B6, B5 и  B2). ](* <- lang_ru;; *);;
+ concept_scophthalmus_kalkan => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

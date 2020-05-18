@@ -1,0 +1,47 @@
+concept_bitter_orange
+	=>nrel_idtf:[bitter orange] (* <- lang_en;; *);
+	=>nrel_main_idtf:[померанец] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: bitter_orange;;
+	<= nrel_sc_text_translation: ...(*->[Померанец - цитрусовая культура.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (померанец)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+concept_bitter_orange=>nrel_sugar_content : 9_g
+(*
+	=> nrel_main_idtf:[9 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+concept_bitter_orange=>nrel_fiber_content : 2.6_g
+(*
+	=> nrel_main_idtf:[2.6 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_bitter_orange;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Померанец является гибридом мандарина и помело.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (померанец)](*<- lang_ru;;*);;
+	
+*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_bitter_orange;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//bitter_orange.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (померанец)](*<- lang_ru;;*);;
+*);;
+
