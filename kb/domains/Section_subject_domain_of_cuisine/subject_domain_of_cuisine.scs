@@ -23,9 +23,14 @@ subject_domain_of_cuisine
 
     ->rrel_explored_relation:
         nrel_kkal; // калорийность
+        nrel_cooking_time; //время приготовления
         nrel_carbohydrates_content; // углеводы
         nrel_protein_content; // белки
         nrel_fats_content;// жиры
         nrel_ingredients; // ингредиенты
-        nrel_instruction;; // пошаговая инструкция
-
+        nrel_instruction; // пошаговая инструкция
+        nrel_equipment; //оборудование
+        nrel_same_kkal;
+        nrel_same_time_of_cooking_time;
+        nrel_same_equipment; 
+        nrel_same_ingredients;;
