@@ -1,0 +1,9 @@
+section_subject_domain_of_african_cuisine
+    =>nrel_main_idtf:[Раздел. Предметная область азиатской кухни] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Section. Subject domain of asian cuisine] (* <-lang_en;;*);
+
+<-atomic_section;;
+
+section_subject_domain_of_asian_cuisine
+
+->rrel_key_sc_element: subject_domain_of_asian_cuisine;;

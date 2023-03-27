@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_oyakodon;;
+
+concept_oyakodon 
+    => nrel_main_idtf: [ Оякодон ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Oyakodon ] (*<-lang_en;;*);;
+
+concept_oyakodon
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение ( Оякодон ) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Оякодон - японский омлет с рисом и курицей. ] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            -> concept_onion;; // репчатый лук (обычный)
+            -> concept_chicken_fillet;; // куриное филе
+            -> concept_soy_sauce;; // соевый соус
+            -> concept_rice;;
+            -> concept_green_onions;; // зеленый лук (chive)
+            -> concept_egg;; // куриное яйцо
+            -> concept_sugar;;
+        *);;
+    *);;
+
+concept_oyakodon
+    <- rrel_instruction: ... (*
+        => nrel_idtf: [ Рецепт ( Оякодон ) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://html//oyakodon recipe.html";;
+        *);;
+    *);;
+
+concept_oyakodon
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://photo//oyakodon.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;
+

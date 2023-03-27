@@ -1,0 +1,48 @@
+sc_node_not_relation -> concept_omurice;;
+
+concept_omurice 
+    => nrel_main_idtf: [ Омурайсу ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Omurice ] (*<-lang_en;;*);;
+
+concept_omurice
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение ( Омурайсу ) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Омурайсу - японское блюдо, состоящее из жареного риса, покрытого или завернутого в омлет, и украшенное кетчупом. ] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            -> concept_onion;; // репчатый лук (обычный)
+            -> concept_chicken;;
+            -> concept_green_peas;; // зеленый горошек
+            -> concept_soy_sauce;; // соевый соус
+            -> concept_boiled_jasmine_rice;; // вареный жасминовый рис
+            -> concept_ketchup;;
+            -> concept_soy_sauce;;
+            -> concept_vegetable_oil;; // растительное масло
+            -> concept_egg;; // куриное яйцо
+            -> concept_cream;; // сливки
+            -> concept_parsley;; // петрушка
+            -> concept_salt;;
+        *);;
+    *);;
+
+concept_omurice
+    <- rrel_instruction: ... (*
+        => nrel_idtf: [ Рецепт ( Омурайсу ) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://html//omurice recipe.html";;
+        *);;
+    *);;
+
+concept_omurice
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://photo//omurice.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;
+
