@@ -1,0 +1,60 @@
+subject_domain_of_european_cuisine
+    =>nrel_main_idtf:[Предметная область европейской кухни] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Subject domain of european cuisine] (* <-lang_en;;*);
+
+<-subject_domain; //скорее всего тут <-subject_domain_of_cuisine; но это не точно
+
+->rrel_maximum_studied_object_class:
+    concept_european_cuisine;
+
+->rrel_not_maximum_studied_object_class: //здесь вы уже пишите названия ваших блюд
+    concept_tsvetaevsky_apple_pie;
+    concept_pancakes;
+    concept_caeser_salad;
+    concept_muffins;
+    concept_pilaf_with_pork;
+    concept_finnish_blueberry_pie;
+    concept_soup_with_meatballs_and_mirpois;
+    concept_low_calorie_cottage_cheese_cake;
+    concept_condensed_milk_pie;
+    concept_baked_sea_bream_with_lemon_and_basil;
+    concept_chicken_meatballs_in_cream_sauce;
+    concept_english_thin_pancakes;
+    concept_shrimp_and_sesame_salad;
+    concept_milk_cupcakes;
+    concept_sisters_simili_apple_pie;
+    concept_cinnamon_rolls_cinnabon;
+    concept_banana_cookies;
+    concept_cottage_cheese_pie;
+    concept_milk_porridge_with_wheat;
+    concept_sour_cream_flatbreads_with_cheese_and_greens;
+    concept_ricotta_cheesecake_with_raspberry;
+    concept_cherry_and_mascarpone_cream_cake;
+    concept_pumpkin_pancakes_with_cinnamon;
+    concept_english_salad;    
+    concept_kefir_pancakes;
+    concept_pear_and_chocolate_pie;
+    concept_mussels_in_garlic_cream_sauce;
+    concept_chicken_fillet_salad_with_cheese_and_nuts;
+    concept_buckwheat_with_meat_and_tomatoes;
+    concept_velvety_zucchini_soup;
+    concept_baguette_with_cheese_greens_and_ham;
+    concept_chicken_fajitas;
+    concept_ginger_cinnamon_cookies;
+    concept_whoopie_pies;
+    concept_choco_pancakes;
+    concept_coconut_cookies;
+    concept_baked_salmon_in_foil;
+    concept_carrot_and_orange_pie;
+    concept_chicken_noodle_soup;
+    concept_omelette;
+    concept_warm_salad_with_fried_cheese;
+    concept_fruit_salad;
+    concept_pearl_barley_with_feta_tomatoes_and_dill;
+    concept_spaghetti_carbonara_with_ham_and_bacon;
+    concept_crab_stick_roll_in_lavash;
+    concept_open_pie_with_onion_and_egg;
+    concept_lentils_with_spinach;
+    concept_young_potatoes_with_paprika;
+    concept_diet_charlotte;
+    concept_royal_cheesecake;;
