@@ -1,0 +1,39 @@
+sc_node_not_relation -> concept_semolina_cookies;;
+
+concept_semolina_cookies
+    => nrel_main_idtf: [ Semolina cookies ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Печенье из манки ] (*<-lang_en;;*);;
+
+concept_semolina_cookies
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение ( Печенье из манки ) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Печенье из манки - десерт из манной крупы. ] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            -> concept_semolina;;
+            -> concept_water;;
+            -> concept_vegetable_oil;;
+            -> concept_salt;; 
+        *);;
+    *);;
+
+concept_semolina_cookies
+    <- rrel_instruction: ... (*
+        => nrel_idtf: [ Рецепт ( Печенье из манки ) ] (* <-lang_ru;; *);;
+        /*<= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://html//semolina cookies recipe.html";;
+        *);;*/
+    *);;
+
+concept_semolina_cookies
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       /* <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://photo//semolina_cookies.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;*/
+    *);;

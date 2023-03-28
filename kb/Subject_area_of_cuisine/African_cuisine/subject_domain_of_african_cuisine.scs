@@ -1,0 +1,35 @@
+subject_domain_of_african_cuisine
+    =>nrel_main_idtf:[Предметная область африканской кухни] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Subject domain of african cuisine] (* <-lang_en;;*);
+
+<-subject_domain_of_cuisine;
+
+->rrel_maximum_studied_object_class:
+    concept_african_cuisine;
+
+->rrel_not_maximum_studied_object_class:
+    concept_mallavi; //egypt
+    concept_semolina_cookies; //algeria
+    concept_coconut_soup;
+    concept_carrots_in_spices;
+    concept_maafe;
+    concept_bobotie;
+    concept_tajine_with_chicken;
+    concept_algerian_salad;
+    concept_kenyan_tea;
+    concept_masala;
+    concept_guinean_chicken;
+    concept_strawberry_mix;
+    concept_asida;
+    concept_roast_leg_of_lamb;
+    concept_grilled_chicken_with_peanut_butter;
+    concept_salad_afrikanec; //)))
+    concept_lentils_with_vegetables;//morocco
+    concept_salted_lemons;
+    concept_harsha;
+    concept_matbucha;
+    concept_bulgur;
+    concept_tahina;
+    concept_caesar_in_moroccan;
+    concept_harira;
+    concept_moroccan_tea;;
