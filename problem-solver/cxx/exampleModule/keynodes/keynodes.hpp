@@ -29,12 +29,6 @@ public:
 
   SC_PROPERTY(Keynode("question_find_isomorphic_structures"), ForceCreate)
   static ScAddr question_find_isomorphic_structures;
-
-  SC_PROPERTY(Keynode("question_check_cyclic_graph"), ForceCreate)
-  static ScAddr question_check_cyclic_graph;
-
-  SC_PROPERTY(Keynode("question_find_tree_search"), ForceCreate)
-  static ScAddr question_find_tree_search;
 };
 
 } // namespace exampleModule
