@@ -1,0 +1,31 @@
+  concept_cro_cherry_biscuits
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [ cherry biscuits ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ вишнёвый пирог ] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (вишнёвый пирог) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [ Вишнёвый пирог -- это ... ] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            ->concept_baking_powder;;
+            ->concept_phyllo_dough;; //тесто фило 
+            ->concept_vegetable_oil;;//жир
+            ->concept_sugar;;//белок
+            ->concept_sour_cream;;//20%
+            ->concept_butter;;
+            ->concept_semolina;;//манка
+            ->concept_eqq;;
+            ->concept_lemon;;
+            ->concept_frozen_cherry;;
+        *);;
+    *);
+    <- rrel_instruction: ... (*
+        => nrel_idtf: [ Рецепт (вишнёвый пирог) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/cherry_biscuits.xml"(*  => nrel_format: format_xml;;  *);;  *);;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       // <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/cherry_biscuits.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

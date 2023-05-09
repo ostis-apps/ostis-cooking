@@ -1,0 +1,22 @@
+concept_rus_herring_under_fur_coat
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [herring under fur coat] (*<-lang_en;;*);
+    => nrel_main_idtf: [селёдка под шубой] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (селёдка под шубой) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [ Селёдка под шубой -- это ... ] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            -> concept_x;;
+        *);;
+    *);
+    <- rrel_instruction: ... (*
+        => nrel_idtf: [ Рецепт (селёдка под шубой) ] (* <-lang_ru;; *);;
+     //   <= nrel_sc_text_translation: ... (* -> rrel_example: "concept_rus_buckwheat.html";;  *);;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/herring_under_fur_coat.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

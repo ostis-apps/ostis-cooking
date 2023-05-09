@@ -1,0 +1,29 @@
+//https://eda.ru/recepty/zakuski/klecki-15887
+concept_pol_kletski
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [kletski] (*<-lang_en;;*);
+    => nrel_main_idtf: [клецки] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (клецки) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [ Клецки -- ] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            -> concept_wheat_bread;;
+            -> concept_garlic;;//корица
+            -> concept_eqq;;
+            -> concept_parsley;;
+         
+        *);;
+    *);
+    <- rrel_instruction: ... (*
+        => nrel_idtf: [ Рецепт ( клецки ) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kletski.xml";;  *);;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+      //  <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/kletski.jpg"  (*  => nrel_format: format_jpg;;  *);; *);;
+    *);;
+    
+

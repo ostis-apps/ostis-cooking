@@ -1,0 +1,25 @@
+  concept_bul_apple_souffle
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [apple souffle] (*<-lang_en;;*);
+    => nrel_main_idtf: [яблочное суфле] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (яблочное суфле) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Яблочное суфле -- это ... ] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            ->concept_apple;;
+            ->concept_sugar_powder;; 
+            ->concept_fat;;//жир
+            ->concept_protein;;//белок
+        *);;
+    *);
+    <- rrel_instruction: ... (*
+        => nrel_idtf: [Рецепт (бабка)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/apple_souffle.xml"(*  => nrel_format: format_xml;;  *);;  *);;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/apple_souffle.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

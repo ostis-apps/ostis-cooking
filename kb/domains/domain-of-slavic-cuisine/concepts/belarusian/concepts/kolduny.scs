@@ -1,0 +1,29 @@
+  concept_bel_babka
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [kolduny] (*<-lang_en;;*);
+    => nrel_main_idtf: [колдуны] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (колдуны) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Колдуны-- это ...] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            ->concept_potato;;
+            ->concept_eqq;; 
+            ->concept_garlic;;
+            ->concept_onion;;
+            ->concept_wheat_flour;;
+            ->concept_forcemeat;; 
+            ->concept_salt;;
+            ->concept_sour_cream;;            
+        *);;
+    *);
+    <- rrel_instruction: ... (*
+        => nrel_idtf: [Рецепт (бабка)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kolduny.xml"(*  => nrel_format: format_xml;;  *);;  *);;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/kolduny.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

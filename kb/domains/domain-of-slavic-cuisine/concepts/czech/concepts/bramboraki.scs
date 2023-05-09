@@ -1,0 +1,30 @@
+concept_czech_bramboraki
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [ bramboraki ] (*<-lang_en;;*);
+    => nrel_main_idtf: [ брамбораки ] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение ( брамбораки) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [ Брамбораки — это такие чешские драники. Разновидность картофельных лепешек, которых в мире существует всевозможных бесчисленное количество.  ] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            -> concept_potato;;
+            -> concept_garlic;;
+            -> concept_milk;;
+            -> concept_eqq;;
+            -> concept_vegetable_oil;;
+            -> concept_wheat_flour;;
+            -> concept_black_pepper;;
+            -> concept_dried_marjoram;;//сушеный майоран
+        *);;
+    *);
+    <- rrel_instruction: ... (*
+        => nrel_idtf: [ Рецепт ( брамбораки ) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/bramboraki.xml";;  *);;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/bramboraki.jpg"  (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;
+    

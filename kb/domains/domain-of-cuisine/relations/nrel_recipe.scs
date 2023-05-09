@@ -1,0 +1,19 @@
+nrel_distillation=>nrel_idtf:[recipe*] (* <- lang_en;; *);;
+nrel_distillation=>nrel_system_identifier:[nrel_recipe] (* <- lang_en;; *);;
+nrel_distillation=>nrel_main_idtf:[рецепт*] (* <- lang_ru;; *);;
+nrel_distillation<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(рецепт*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+	(*
+        ->[Рецепт - неролевое бинарное отношение, связывающее блюдо с двойкой, включающей в себя множество ингредиентов и инструкцию по приготовлению](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+        ->concept_ingredient;;
+	    ->concept_instruction;;
+	*);;
+*);;	
+
+nrel_recipe=>nrel_first_domain:concept_dish;;
+nrel_recipe=>nrel_second_domain:concept_instruction;;
+

@@ -1,0 +1,28 @@
+concept_bel_babka
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [babka] (*<-lang_en;;*);
+    => nrel_main_idtf: [бабка] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (бабка)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [Бабка -- это ... ] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            ->concept_potato;;
+            ->concept_pork_forcemeat;; //свиной фарш
+            ->concept_onion;;
+            ->concept_salt;;
+            ->concept_pepper;;
+            ->concept_wheat_flour;;
+            ->concept_vegetable_oil;;
+        *);;
+    *);
+    <- rrel_instruction: ... (*
+        => nrel_idtf: [Рецепт (бабка)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/babka.xml"(*  => nrel_format: format_xml;;  *);;  *);;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/babka.png" (*  => nrel_format: format_png;;  *);;*);;
+    *);;

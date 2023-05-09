@@ -1,0 +1,23 @@
+  
+concept_rus_mannik_with_kefir
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [ mannik with kefir] (*<-lang_en;;*);
+    => nrel_main_idtf: [ манник на кефире ] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (манник на кефире) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [ Манник на кефире -- это ... ] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            -> concept_x;;
+        *);;
+    *);
+    <- rrel_instruction: ... (*
+        => nrel_idtf: [ Рецепт (манник на кефире) ] (* <-lang_ru;; *);;
+     //   <= nrel_sc_text_translation: ... (* -> rrel_example: "concept_rus_buckwheat.html";;  *);;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/mannik_with_kefir.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;

@@ -1,0 +1,32 @@
+
+concept_rus_olivier_salad
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [ olivier salad] (*<-lang_en;;*);
+    => nrel_main_idtf: [ оливье] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение (оливье) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [ Оливье -- это популярный советский салат из картофеля, яиц, огурцов, вареной колбасы, горошка и майонеза.  ] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            -> concept_egg;;
+            -> concept_potato;;
+            -> concept_salt;;
+            -> concept_pickles;;      // маринованные огурцы
+            -> concept_salt;;
+            -> concept_carrot;;
+            -> concept_doctors_sausage;;
+            -> concept_sout_cream;;
+            -> concept_mayonnaise;;
+        *);;
+    *);
+    <- rrel_instruction: ... (*
+        => nrel_idtf: [ Рецепт (оливье) ] (* <-lang_ru;; *);;
+     //   <= nrel_sc_text_translation: ... (* -> rrel_example: "concept_rus_olivier_salad.html";;  *);;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/olivier.jpg"  (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;
+

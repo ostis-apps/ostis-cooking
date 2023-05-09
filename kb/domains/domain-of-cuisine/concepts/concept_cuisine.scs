@@ -1,0 +1,15 @@
+concept_cuisine
+    <-sc_node_norole_relation;
+    =>nrel_main_idtf:[кухня](*<-lang_ru;;*);
+    =>nrel_main_idtf:[cuisine](*<-lang_en;;*);
+    =>nrel_example:concept_african_cuisine;
+    ->rrel_key_sc_element:...(*
+        <-definition;;
+        => nrel_idtf: [Определение (Кухня) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: [Кухня -- это совокупность блюд народа, страны или региона с характерными отличиями.] (* <-lang_ru;; *);;   *);;
+        ->nrel_using_constants:
+                concept_dish;
+                concept_nation;
+                concept_country;
+                concept_region;;
+    *);;
