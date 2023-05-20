@@ -7,7 +7,7 @@ concept_pol_apple_pie
         <- definition;;
         => nrel_idtf: [Определение (яблочный пирог) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
-             -> rrel_example: [ Яблочный пирог -- ] (* <-lang_ru;; *);;
+             -> rrel_example: [Яблочный пирог -- ] (* <-lang_ru;; *);;
         *);;
         => nrel_recipe: ... (*
             ->rrel_ingredient:...(*
@@ -21,7 +21,7 @@ concept_pol_apple_pie
                  -> concept_sugar;;
             *);;
             ->rrel_instruction:...(*
-                => nrel_idtf: [ Рецепт ( яблочный пирог ) ] (* <-lang_ru;; *);;
+                => nrel_idtf: [Рецепт (яблочный пирог)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/apple_pie.xml";;  *);;
             *);;
         *);;

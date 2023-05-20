@@ -6,7 +6,7 @@
         <- definition;;
         => nrel_idtf: [Определение (габровские блинчики) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
-             -> rrel_example: [ абровские блинчики -- это ...] (* <-lang_ru;; *);;
+             -> rrel_example: [ Габровские блинчики -- это ...] (* <-lang_ru;; *);;
         *);;
         => nrel_using_constants: ... (*
             ->concept_milk;;
@@ -19,7 +19,7 @@
         *);;
     *);
     <- rrel_instruction: ... (*
-        => nrel_idtf: [ Рецепт (бабка) ] (* <-lang_ru;; *);;
+        => nrel_idtf: [ Рецепт (габровские блинчики) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/gabrovo_pancakes.xml"(*  => nrel_format: format_xml;;  *);;  *);;
     *);
     <- rrel_key_sc_element: ... (*

@@ -2,7 +2,7 @@ concept_dish
     <-sc_node_not_relation;
     =>nrel_main_idtf:[блюдо](*<-lang_ru;;*);
     =>nrel_main_idtf:[dish](*<-lang_en;;*);
-    =>nrel_example:concept_african_cuisine;
+
     ->rrel_key_sc_element:...(*
         <-definition;;
         => nrel_idtf: [Определение (Блюдо)] (* <-lang_ru;; *);;

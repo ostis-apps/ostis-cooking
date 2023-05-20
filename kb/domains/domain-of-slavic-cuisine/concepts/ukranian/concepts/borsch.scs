@@ -18,8 +18,6 @@ concept_pol_white_borsch
             -> concept_onion;;//репчатый лук
             -> concept_butter;;
             -> concept_sour_cream;;
-           
-         
         *);;
     *);
     <- rrel_instruction: ... (*

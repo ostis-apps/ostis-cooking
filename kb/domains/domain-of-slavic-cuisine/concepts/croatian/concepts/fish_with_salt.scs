@@ -1,7 +1,7 @@
   concept_cro_fish_with_salt
     <-sc_node_not_relation;
-    => nrel_main_idtf: [ fish with salt ] (*<-lang_en;;*);
-    => nrel_main_idtf: [ рыба под солью ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [fish with salt] (*<-lang_en;;*);
+    => nrel_main_idtf: [рыба под солью] (*<-lang_ru;;*);
     <- rrel_key_sc_element: ... (*
         <- definition;;
         => nrel_idtf: [Определение (рыба под солью) ] (* <-lang_ru;; *);;

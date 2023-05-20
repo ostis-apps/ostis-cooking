@@ -1,7 +1,7 @@
   concept_cro_cherry_biscuits
     <-sc_node_not_relation;
-    => nrel_main_idtf: [ cherry biscuits ] (*<-lang_en;;*);
-    => nrel_main_idtf: [ вишнёвый пирог ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [cherry biscuits] (*<-lang_en;;*);
+    => nrel_main_idtf: [вишнёвый пирог] (*<-lang_ru;;*);
     <- rrel_key_sc_element: ... (*
         <- definition;;
         => nrel_idtf: [Определение (вишнёвый пирог) ] (* <-lang_ru;; *);;

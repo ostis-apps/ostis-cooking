@@ -13,7 +13,7 @@ concept_rus_herring_under_fur_coat
         *);;
     *);
     <- rrel_instruction: ... (*
-        => nrel_idtf: [ Рецепт (селёдка под шубой) ] (* <-lang_ru;; *);;
+        => nrel_idtf: [Рецепт (селёдка под шубой)] (* <-lang_ru;; *);;
      //   <= nrel_sc_text_translation: ... (* -> rrel_example: "concept_rus_buckwheat.html";;  *);;
     *);
     <- rrel_key_sc_element: ... (*

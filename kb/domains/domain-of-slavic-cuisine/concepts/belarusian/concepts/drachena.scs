@@ -1,4 +1,4 @@
-  concept_bel_babka
+  concept_bel_drachena
     <-sc_node_not_relation;
     => nrel_main_idtf: [drachena] (*<-lang_en;;*);
     => nrel_main_idtf: [драчена] (*<-lang_ru;;*);
@@ -19,7 +19,7 @@
         *);;
     *);
     <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (бабка)] (* <-lang_ru;; *);;
+        => nrel_idtf: [Рецепт (драчена)] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/drachena.xml"(*  => nrel_format: format_xml;;  *);;  *);;
     *);
     <- rrel_key_sc_element: ... (*

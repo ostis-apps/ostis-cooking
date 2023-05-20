@@ -1,20 +1,20 @@
   
 concept_rus_dumplings_with_cottage_cheese
     <-sc_node_not_relation;
-    => nrel_main_idtf: [ dumplings with cottage cheese] (*<-lang_en;;*);
-    => nrel_main_idtf: [ вареники с творогом ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [dumplings with cottage cheese] (*<-lang_en;;*);
+    => nrel_main_idtf: [вареники с творогом] (*<-lang_ru;;*);
     <- rrel_key_sc_element: ... (*
         <- definition;;
         => nrel_idtf: [Определение (вареники с творогом) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
-             -> rrel_example: [ Вареники с творогом -- это ... ] (* <-lang_ru;; *);;
+             -> rrel_example: [Вареники с творогом -- это ... ] (* <-lang_ru;; *);;
         *);;
         => nrel_using_constants: ... (*
             -> concept_x;;
         *);;
     *);
     <- rrel_instruction: ... (*
-        => nrel_idtf: [ Рецепт (вареники с творогом) ] (* <-lang_ru;; *);;
+        => nrel_idtf: [Рецепт (вареники с творогом)] (* <-lang_ru;; *);;
      //   <= nrel_sc_text_translation: ... (* -> rrel_example: "concept_rus_buckwheat.html";;  *);;
     *);
     <- rrel_key_sc_element: ... (*

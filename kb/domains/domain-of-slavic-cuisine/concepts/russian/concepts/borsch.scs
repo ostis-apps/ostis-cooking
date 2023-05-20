@@ -1,8 +1,8 @@
   
 concept_rus_borsch
     <-sc_node_not_relation;
-    => nrel_main_idtf: [ borcsh ] (*<-lang_en;;*);
-    => nrel_main_idtf: [ борщ ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [borcsh] (*<-lang_en;;*);
+    => nrel_main_idtf: [борщ] (*<-lang_ru;;*);
     <- rrel_key_sc_element: ... (*
         <- definition;;
         => nrel_idtf: [Определение (борщ) ] (* <-lang_ru;; *);;
@@ -14,7 +14,7 @@ concept_rus_borsch
         *);;
     *);
     <- rrel_instruction: ... (*
-        => nrel_idtf: [ Рецепт (борщ) ] (* <-lang_ru;; *);;
+        => nrel_idtf: [Рецепт (борщ)] (* <-lang_ru;; *);;
      //   <= nrel_sc_text_translation: ... (* -> rrel_example: "concept_rus_borsch.html";;  *);;
     *);
     <- rrel_key_sc_element: ... (*

@@ -1,12 +1,12 @@
 concept_rus_thin_pancakes_with_milk
     <-sc_node_not_relation;
-    => nrel_main_idtf: [ thin pancakes with milk] (*<-lang_en;;*);
-    => nrel_main_idtf: [ тонкие блины на молоке ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [thin pancakes with milk] (*<-lang_en;;*);
+    => nrel_main_idtf: [тонкие блины на молоке] (*<-lang_ru;;*);
     <- rrel_key_sc_element: ... (*
         <- definition;;
-        => nrel_idtf: [Определение ( тонкие блины на молоке) ] (* <-lang_ru;; *);;
+        => nrel_idtf: [Определение (тонкие блины на молоке) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
-             -> rrel_example: [ Тонкие блины на молоке -- это английский вариант традиционных пышных русских блинов, выпеченных на дрожжах.  ] (* <-lang_ru;; *);;
+             -> rrel_example: [Тонкие блины на молоке -- это английский вариант традиционных пышных русских блинов, выпеченных на дрожжах.  ] (* <-lang_ru;; *);;
         *);;
         => nrel_using_constants: ... (*
             -> concept_egg;;
@@ -18,7 +18,7 @@ concept_rus_thin_pancakes_with_milk
         *);;
         *);
     <- rrel_instruction: ... (*
-        => nrel_idtf: [ Рецепт ( тонкие блины на молоке) ] (* <-lang_ru;; *);;
+        => nrel_idtf: [Рецепт (тонкие блины на молоке)] (* <-lang_ru;; *);;
      //   <= nrel_sc_text_translation: ... (* -> rrel_example: "concept_rus_thin_pancakes_with_milk.html";;  *);;
          *);
     <- rrel_key_sc_element: ... (*

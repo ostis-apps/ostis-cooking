@@ -7,7 +7,7 @@ concept_pol_white_borsch
         <- definition;;
         => nrel_idtf: [Определение (белый борщ) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
-             -> rrel_example: [ Белый борщ -- ] (* <-lang_ru;; *);;
+             -> rrel_example: [Белый борщ -- ] (* <-lang_ru;; *);;
         *);;
         => nrel_using_constants: ... (*
             -> concept_butter;;
@@ -30,7 +30,7 @@ concept_pol_white_borsch
         *);;
     *);
     <- rrel_instruction: ... (*
-        => nrel_idtf: [ Рецепт ( белый борщ ) ] (* <-lang_ru;; *);;
+        => nrel_idtf: [Рецепт (белый борщ)] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/white_borsch.xml";;  *);;
     *);
     <- rrel_key_sc_element: ... (*

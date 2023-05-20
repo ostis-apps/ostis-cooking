@@ -1,19 +1,19 @@
 concept_rus_semolina
     <-sc_node_not_relation;
     => nrel_main_idtf: [semolina] (*<-lang_en;;*);
-    => nrel_main_idtf: [ манная каша ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [манная каша] (*<-lang_ru;;*);
     <- rrel_key_sc_element: ... (*
         <- definition;;
         => nrel_idtf: [Определение (манная каша) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
-             -> rrel_example: [ Манная каша -- это ... ] (* <-lang_ru;; *);;
+             -> rrel_example: [Манная каша -- это ... ] (* <-lang_ru;; *);;
         *);;
         => nrel_using_constants: ... (*
             -> concept_x;;
         *);;
     *);
     <- rrel_instruction: ... (*
-        => nrel_idtf: [ Рецепт (манная каша) ] (* <-lang_ru;; *);;
+        => nrel_idtf: [Рецепт (манная каша)] (* <-lang_ru;; *);;
      //   <= nrel_sc_text_translation: ... (* -> rrel_example: "concept_rus_buckwheat.html";;  *);;
     *);
     <- rrel_key_sc_element: ... (*

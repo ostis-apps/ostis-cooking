@@ -1,4 +1,4 @@
-  concept_bel_babka
+  concept_bel_kholodnik_with_kvas
     <-sc_node_not_relation;
     => nrel_main_idtf: [kholodnik_with_kvas] (*<-lang_en;;*);
     => nrel_main_idtf: [холодник на квасе] (*<-lang_ru;;*);
@@ -20,7 +20,7 @@
         *);;
     *);
     <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (бабка)] (* <-lang_ru;; *);;
+        => nrel_idtf: [Рецепт (холодник на квасе)] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kholodnik_with_kvas.xml"(*  => nrel_format: format_xml;;  *);;  *);;
     *);
     <- rrel_key_sc_element: ... (*

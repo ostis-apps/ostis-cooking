@@ -1,11 +1,11 @@
 
 concept_rus_charlotte
     <-sc_node_not_relation;
-    => nrel_main_idtf: [ charlotte ] (*<-lang_ru;;*);
-    => nrel_main_idtf: [ шарлотка ] (*<-lang_en;;*);
+    => nrel_main_idtf: [charlotte] (*<-lang_ru;;*);
+    => nrel_main_idtf: [шарлотка] (*<-lang_en;;*);
     <- rrel_key_sc_element: ... (*
         <- definition;;
-        => nrel_idtf: [Определение ( шарлотка) ] (* <-lang_ru;; *);;
+        => nrel_idtf: [Определение (шарлотка)] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [ Шарлотка -- сладкий десерт из яблок, запечённых в тесте -- вариант яблочного пирога. ] (* <-lang_ru;; *);;
         *);;
@@ -19,7 +19,7 @@ concept_rus_charlotte
         *);;
     *);
     <- rrel_instruction: ... (*
-        => nrel_idtf: [ Рецепт ( шарлотка) ] (* <-lang_ru;; *);;
+        => nrel_idtf: [Рецепт (шарлотка)] (* <-lang_ru;; *);;
      //   <= nrel_sc_text_translation: ... (* -> rrel_example: "concept_rus_charlotte.html";;  *);;
     *);
     <- rrel_key_sc_element: ... (*

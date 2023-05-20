@@ -1,8 +1,8 @@
 
 concept_rus_cottage_cheese_pancakes
     <-sc_node_not_relation;
-    => nrel_main_idtf: [ cottage cheese pancakes ] (*<-lang_ru;;*);
-    => nrel_main_idtf: [ сырники из творога ] (*<-lang_en;;*);
+    => nrel_main_idtf: [cottage cheese pancakes] (*<-lang_ru;;*);
+    => nrel_main_idtf: [сырники из творога] (*<-lang_en;;*);
     <- rrel_key_sc_element: ... (*
         <- definition;;
         => nrel_idtf: [Определение (сырники из творога)] (* <-lang_ru;; *);;
@@ -15,7 +15,7 @@ concept_rus_cottage_cheese_pancakes
         *);;
     *);
     <- rrel_instruction: ... (*
-        => nrel_idtf: [ Рецепт ( сырники из творога ) ] (* <-lang_ru;; *);;
+        => nrel_idtf: [Рецепт (сырники из творога)] (* <-lang_ru;; *);;
         //<= nrel_sc_text_translation: ... (* -> rrel_example: [concept_rus_cottage_cheese_pancakes];;  *);;
     *);
     <- rrel_key_sc_element: ... (*

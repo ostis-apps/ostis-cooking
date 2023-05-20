@@ -18,7 +18,7 @@
         *);;
     *);
     <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (бабка)] (* <-lang_ru;; *);;
+        => nrel_idtf: [Рецепт (затирка)] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/zatyrka.xml"(*  => nrel_format: format_xml;;  *);;  *);;
     *);
     <- rrel_key_sc_element: ... (*

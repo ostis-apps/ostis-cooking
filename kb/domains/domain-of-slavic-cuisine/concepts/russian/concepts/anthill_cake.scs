@@ -1,13 +1,13 @@
   
 concept_rus_anthill_cake
     <-sc_node_not_relation;
-    => nrel_main_idtf: [ anthill cake ] (*<-lang_en;;*);
-    => nrel_main_idtf: [ торт-муравейник ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [anthill cake] (*<-lang_en;;*);
+    => nrel_main_idtf: [торт-муравейник] (*<-lang_ru;;*);
     <- rrel_key_sc_element: ... (*
         <- definition;;
         => nrel_idtf: [Определение (торт-муравейник) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
-             -> rrel_example: [ Торт-муравейник- это ... ] (* <-lang_ru;; *);;
+             -> rrel_example: [Торт-муравейник- это ... ] (* <-lang_ru;; *);;
         *);;
         => nrel_using_constants: ... (*
             -> concept_x;;
