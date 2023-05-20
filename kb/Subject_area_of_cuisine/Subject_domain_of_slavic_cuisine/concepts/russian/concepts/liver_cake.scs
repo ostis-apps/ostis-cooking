@@ -1,0 +1,23 @@
+  
+concept_rus_liver_cake
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [liver cake] (*<-lang_en;;*);
+    => nrel_main_idtf: [печёночный торт] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (печёночный торт)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [печёночный торт -- это ... ] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            -> concept_x;;
+        *);;
+    *);
+    <- rrel_instruction: ... (*
+        => nrel_idtf: [Рецепт (печёночный торт)] (* <-lang_ru;; *);;
+     //   <= nrel_sc_text_translation: ... (* -> rrel_example: "concept_rus_buckwheat.txt";;  *);;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       // <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/liver_cake.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;
