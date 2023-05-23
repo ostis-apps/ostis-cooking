@@ -5,25 +5,28 @@ concept_ukr_borsch
     => nrel_main_idtf: [украинский борщ] (*<-lang_ru;;*);
     <- rrel_key_sc_element: ... (*
         <- definition;;
-        => nrel_idtf: [Опр/ (украинский борщ) ] (* <-lang_ru;; *);;
+        => nrel_idtf: [Опр. (украинский борщ) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [украинский борщ - ] (* <-lang_ru;; *);;
         *);;
-        => nrel_using_constants: ... (*
-            -> concept_meet;;
-            -> concept_potato;;
-            -> concept_white_cabbage;;
-            -> concept_beet;;
-            -> concept_tomato_puree;;
-            -> concept_onion;;//репчатый лук
-            -> concept_butter;;
-            -> concept_sour_cream;;
-        *);;
+        
     *);
-    <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (украинский борщ)] (* <-lang_ru;; *);;
-        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/borsch.txt";;  *);;
-    *);
+    => nrel_recipe: ... (*
+            <-rrel_ingredients:...(*
+                -> concept_meet;;
+                -> concept_potato;;
+                -> concept_white_cabbage;;
+                -> concept_beet;;
+                -> concept_tomato_puree;;
+                -> concept_onion;;//репчатый лук
+                -> concept_butter;;
+                -> concept_sour_cream;;
+            *);;
+             <- rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (украинский борщ)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/borsch.txt";;  *);;
+            *);;
+        *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/borsch.png"  (*  => nrel_format: format_png;;  *);; *);;

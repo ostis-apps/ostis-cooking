@@ -8,21 +8,24 @@
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [колдуны - картофельные оладьи (драники) с начинкой из мяса.] (* <-lang_ru;; *);;
         *);;
-        => nrel_using_constants: ... (*
-            ->concept_potato;;
-            ->concept_eqq;; 
-            ->concept_garlic;;
-            ->concept_onion;;
-            ->concept_wheat_flour;;
-            ->concept_forcemeat;; 
-            ->concept_salt;;
-            ->concept_sour_cream;;            
-        *);;
+        
     *);
-    <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (колдуны)] (* <-lang_ru;; *);;
-        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kolduny.txt"(*  => nrel_format: format_txt;;  *);;  *);;
-    *);
+    => nrel_recipe: ... (*
+            <-rrel_ingredients:...(*
+                ->concept_potato;;
+                ->concept_eqq;; 
+                ->concept_garlic;;
+                ->concept_onion;;
+                ->concept_wheat_flour;;
+                ->concept_forcemeat;; 
+                ->concept_salt;;
+                ->concept_sour_cream;;   
+            *);;    
+            <-rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (колдуны)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kolduny.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/kolduny.png" (*  => nrel_format: format_png;;  *);;*);;

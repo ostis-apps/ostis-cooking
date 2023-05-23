@@ -9,20 +9,23 @@ concept_bel_babka
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [бабка - блюдо из тертого картофеля, заправленного жареным салом, мясом и луком и запеченное в духовке.] (* <-lang_ru;; *);;
         *);;
-        => nrel_using_constants: ... (*
-            ->concept_potato;;
-            ->concept_pork_forcemeat;; //свиной фарш
-            ->concept_onion;;
-            ->concept_salt;;
-            ->concept_pepper;;
-            ->concept_wheat_flour;;
-            ->concept_vegetable_oil;;
-        *);;
+        
     *);
-    <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (бабка)] (* <-lang_ru;; *);;
-        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/babka.txt"(*  => nrel_format: format_txt;;  *);;  *);;
-    *);
+    => nrel_recipe: ... (*
+            <-rrel_ingredients: 
+                concept_potato;
+                concept_pork_forcemeat; //свиной фарш
+                concept_onion;
+                concept_salt;
+                concept_pepper;
+                concept_wheat_flour;
+                concept_vegetable_oil;;
+
+            <-rrel_instruction:"file://../../../figures/html/babka.txt"(* 
+                => nrel_format: format_txt;; 
+                => nrel_idtf: [Рецепт (бабка)] (* <-lang_ru;; *);;
+            *);;
+        *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/babka.png" (*  => nrel_format: format_png;;  *);;*);;

@@ -8,28 +8,31 @@
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [мачанка - блины с мясной подливой.] (* <-lang_ru;; *);;
         *);;
-        => nrel_using_constants: ... (*
-            ->concept_pork_rribs;;//свиные ребра
-            ->concept_smoked_bacon;;//копченая грудинка
-            ->concept_village_sausage;;//деревенская колбаса
-            ->concept_onion;;
-            ->concept_pepper;;
-            ->concept_cumin;;//тмин 
-            ->concept_laurel_leaf;;//лавровый лист
-            ->concept_eqq;;    
-            ->concept_mushroom;; 
-            ->concept_milk;; 
-            ->concept_sugar;;  
-            ->concept_salt;;
-            ->concept_vegetable_oil;;
-            ->concept_baking_powder;;//разрыхлитель
-            ->concept_wheat_flour;;              
-        *);;
+        
     *);
-    <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (мачанка)] (* <-lang_ru;; *);;
-        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/machanka.txt"(*  => nrel_format: format_txt;;  *);;  *);;
-    *);
+    => nrel_recipe: ... (*
+            <-rrel_ingredients:..(*
+                ->concept_pork_rribs;;//свиные ребра
+                ->concept_smoked_bacon;;//копченая грудинка
+                ->concept_village_sausage;;//деревенская колбаса
+                ->concept_onion;;
+                ->concept_pepper;;
+                ->concept_cumin;;//тмин 
+                ->concept_laurel_leaf;;//лавровый лист
+                ->concept_eqq;;    
+                ->concept_mushroom;; 
+                ->concept_milk;; 
+                ->concept_sugar;;  
+                ->concept_salt;;
+                ->concept_vegetable_oil;;
+                ->concept_baking_powder;;//разрыхлитель
+                ->concept_wheat_flour;;   
+            *);;        
+            <-rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (мачанка)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/machanka.txt"(*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/machanka.png" (*  => nrel_format: format_png;;  *);;*);;

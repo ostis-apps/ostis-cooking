@@ -5,18 +5,22 @@ concept_rus_potato_draniki
     => nrel_main_idtf: [картофельные драники] (*<-lang_ru;;*);
     <- rrel_key_sc_element: ... (*
         <- definition;;
-        => nrel_idtf: [Опр. (картофельные драники) ] (* <-lang_ru;; *);;
+        => nrel_idtf: [Опр. (картофельные драники)] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [картофельные драники - ] (* <-lang_ru;; *);;
         *);;
-        => nrel_using_constants: ... (*
-            -> concept_x;;
-        *);;
+        
     *);
-    <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (картофельные драники)] (* <-lang_ru;; *);;
-     //   <= nrel_sc_text_translation: ... (* -> rrel_example: "concept_rus_buckwheat.txt";;  *);;
-    *);
+    => nrel_recipe: ... (*
+            <-rrel_ingredients:...(*
+                -> concept_x;;
+            *);;
+            
+            <- rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (картофельные драники)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/draniki.txt" (*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/draniki.jpg" (*  => nrel_format: format_jpg;;  *);;*);;

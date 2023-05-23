@@ -9,14 +9,17 @@ concept_rus_buckwheat
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [гречневая каша - каша, приготавливаемая из гречишного зерна.] (* <-lang_ru;; *);;
         *);;
-        => nrel_using_constants: ... (*
-            -> concept_x;;
-        *);;
+        
     *);
-    <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (гречневая каша)] (* <-lang_ru;; *);;
-        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/buckwheat.txt" (*  => nrel_format: format_txt;;  *);;  *);;
-    *);
+    => nrel_recipe: ... (*
+            <-rrel_ingredients:...(*
+                -> concept_x;;
+            *);;
+            <- rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (гречневая каша)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/buckwheat.txt" (*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/buckwheat.jpg" (*  => nrel_format: format_jpg;;  *);;*);;

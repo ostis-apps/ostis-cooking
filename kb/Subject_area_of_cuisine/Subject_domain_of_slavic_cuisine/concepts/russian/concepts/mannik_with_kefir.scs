@@ -9,14 +9,18 @@ concept_rus_mannik_with_kefir
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [манник на кефире - ] (* <-lang_ru;; *);;
         *);;
-        => nrel_using_constants: ... (*
-            -> concept_x;;
-        *);;
+        
     *);
-    <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (манник на кефире)] (* <-lang_ru;; *);;
-     //   <= nrel_sc_text_translation: ... (* -> rrel_example: "concept_rus_buckwheat.txt";;  *);;
-    *);
+    => nrel_recipe: ... (*
+            <-rrel_ingredients:...(*
+                -> concept_x;;
+            *);;
+
+            <- rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (манник на кефире)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/mannik_with_kefir.txt" (*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+        *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/mannik_with_kefir.jpg" (*  => nrel_format: format_jpg;;  *);;*);;

@@ -8,19 +8,22 @@ concept_rus_thin_pancakes_with_milk
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [тонкие блины на молоке - английский вариант традиционных пышных русских блинов, выпеченных на дрожжах.] (* <-lang_ru;; *);;
         *);;
-        => nrel_using_constants: ... (*
-            -> concept_egg;;
-            -> concept_vegetable_oil;;
-            -> concept_sugar;;
-            -> concept_flour;;       
-            -> concept_salt;;
-            -> concept_milk;;
-        *);;
         *);
-    <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (тонкие блины на молоке)] (* <-lang_ru;; *);;
-     //   <= nrel_sc_text_translation: ... (* -> rrel_example: "concept_rus_thin_pancakes_with_milk.txt";;  *);;
-         *);
+    => nrel_recipe: ... (*
+            <-rrel_ingredients:...(*
+                -> concept_egg;;
+                -> concept_vegetable_oil;;
+                -> concept_sugar;;
+                -> concept_flour;;       
+                -> concept_salt;;
+                -> concept_milk;;
+            *);;
+            <- rrel_instruction: ... (*
+                    => nrel_idtf: [Рецепт (тонкие блины на молоке)] (* <-lang_ru;; *);;
+                    <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/thin_pancakes_with_milk.txt"  (*  => nrel_format: format_txt;;  *);;  *);;
+                    *);;
+            
+        *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/thin_pancakes_with_milk.jpg"  (*  => nrel_format: format_jpg;;  *);;*);;

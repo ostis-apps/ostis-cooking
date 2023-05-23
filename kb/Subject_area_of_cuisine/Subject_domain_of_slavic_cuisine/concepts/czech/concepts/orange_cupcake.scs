@@ -10,21 +10,24 @@ concept_czech_orange_cupcake
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [апельсиновый кекс - кекс на основе муки, сахара и апельсинов.] (* <-lang_ru;; *);;
         *);;
-        => nrel_using_constants: ... (*
-            -> concept_sugar;;
-            -> concept_wheat_flour;;
-            -> concept_orange;;
-            -> concept_butter;;
-            -> concept_eqq;;
-            -> concept_baking_powder;;
-            -> concept_vanilla_sugar;;
-        *);;
+        
     *);
 
-    <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (апельсиновый кекс)] (* <-lang_ru;; *);;
-        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/orange_cupcake.txt";;  *);;
-    *);
+    => nrel_recipe: ... (*
+            <-rrel_ingredients:..(*
+                -> concept_sugar;;
+                -> concept_wheat_flour;;
+                -> concept_orange;;
+                -> concept_butter;;
+                -> concept_eqq;;
+                -> concept_baking_powder;;
+                -> concept_vanilla_sugar;;
+            *);;
+            <- rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (апельсиновый кекс)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/orange_cupcake.txt";;  *);;
+            *);;
+        *);
 
     <- rrel_key_sc_element: ... (*
         <- illustration;;

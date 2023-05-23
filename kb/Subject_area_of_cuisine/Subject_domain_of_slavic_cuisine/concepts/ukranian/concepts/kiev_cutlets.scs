@@ -4,18 +4,22 @@ concept_ukr_kiev_cutlets
     => nrel_main_idtf: [киевские котлеты] (*<-lang_ru;;*);
     <- rrel_key_sc_element: ... (*
         <- definition;;
-        => nrel_idtf: [Опр. (киевские котлеты) ] (* <-lang_ru;; *);;
+        => nrel_idtf: [Опр. (киевские котлеты)] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [киевские котлеты - ] (* <-lang_ru;; *);;
         *);;
-        => nrel_using_constants: ... (*
-            -> concept_meet;;
-        *);;
+        
     *);
-    <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (киевские котлеты)] (* <-lang_ru;; *);;
-        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/borsch.txt";;  *);;
-    *);
+    => nrel_recipe: ... (*
+            <-rrel_ingredients:...(*
+                -> concept_meet;;
+            *);;
+            <- rrel_instruction:...(*
+                => nrel_idtf: [Рецепт (киевские котлеты)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/borsch.txt";;  *);;
+            *);;
+            
+        *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/borsch.png"  (*  => nrel_format: format_png;;  *);; *);;

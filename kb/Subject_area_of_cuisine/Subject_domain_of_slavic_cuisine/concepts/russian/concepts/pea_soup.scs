@@ -9,14 +9,18 @@ concept_rus_pea_soup
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [гороховый суп - ] (* <-lang_ru;; *);;
         *);;
-        => nrel_using_constants: ... (*
-            -> concept_x;;
-        *);;
+        
     *);
-    <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (гороховый суп)] (* <-lang_ru;; *);;
-     //   <= nrel_sc_text_translation: ... (* -> rrel_example: "concept_rus_buckwheat.txt";;  *);;
-    *);
+    => nrel_recipe: ... (*
+            <-rrel_ingredients:...(*
+                -> concept_x;;
+            *);;
+            <- rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (гороховый суп)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/pea_soup.txt" (*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+            
+        *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/pea_soup.jpg" (*  => nrel_format: format_jpg;;  *);;*);;

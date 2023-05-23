@@ -8,21 +8,24 @@ concept_czech_bramboraki
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [брамбораки - чешские драники, разновидность картофельных лепешек.] (* <-lang_ru;; *);;
         *);;
-        => nrel_using_constants: ... (*
-            -> concept_potato;;
-            -> concept_garlic;;
-            -> concept_milk;;
-            -> concept_eqq;;
-            -> concept_vegetable_oil;;
-            -> concept_wheat_flour;;
-            -> concept_black_pepper;;
-            -> concept_dried_marjoram;;//сушеный майоран
-        *);;
+       
     *);
-    <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (брамбораки)] (* <-lang_ru;; *);;
-        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/bramboraki.txt";;  *);;
-    *);
+    => nrel_recipe: ... (*
+            <-rrel_ingredients:...(*
+                -> concept_potato;;
+                -> concept_garlic;;
+                -> concept_milk;;
+                -> concept_eqq;;
+                -> concept_vegetable_oil;;
+                -> concept_wheat_flour;;
+                -> concept_black_pepper;;
+                -> concept_dried_marjoram;;//сушеный майоран
+            *);;
+             <- rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (брамбораки)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/bramboraki.txt";;  *);;
+            *);;
+        *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/bramboraki.jpg"  (*  => nrel_format: format_jpg;;  *);;*);;

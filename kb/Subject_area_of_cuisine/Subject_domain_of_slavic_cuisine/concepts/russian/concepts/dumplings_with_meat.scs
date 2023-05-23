@@ -8,14 +8,18 @@ concept_rus_dumplings_with_meat
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [пельмени - ] (* <-lang_ru;; *);;
         *);;
-        => nrel_using_constants: ... (*
-            -> concept_x;;
-        *);;
+       
     *);
-    <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (пельмени)] (* <-lang_ru;; *);;
-        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/dumplings_with_meat.txt" (*  => nrel_format: format_txt;;  *);;  *);;
-    *);
+     => nrel_recipe: ... (*
+            <-rrel_ingredients:...(*
+                -> concept_x;;
+            *);;
+            <- rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (пельмени)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/dumplings_with_meat.txt" (*  => nrel_format: format_txt;;  *);;  *);;
+            *);;
+            
+        *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/dumplings_with_meat.jpg" (*  => nrel_format: format_jpg;;  *);;*);;

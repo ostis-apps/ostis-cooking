@@ -5,25 +5,28 @@ concept_czech_trdelnik
     => nrel_main_idtf: [трдельник] (*<-lang_ru;;*);
     <- rrel_key_sc_element: ... (*
         <- definition;;
-        => nrel_idtf: [Опр. (трдельник) ] (* <-lang_ru;; *);;
+        => nrel_idtf: [Опр. (трдельник)] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [трдельник - чешская булочка из сдобного теста с ароматной обсыпкой из корицы, орехов и сахара.] (* <-lang_ru;; *);;
         *);;
-        => nrel_using_constants: ... (*
-            -> concept_wheat_flour;;
-            -> concept_cinnamon;;//корица
-            -> concept_butter;;
-            -> concept_nut;;
-            -> concept_eqq;;
-            -> concept_milk;;
-            -> concept_ferment;;//дрожжи
-            -> concept_sugar;;
-        *);;
+        
     *);
-    <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (трдельник)] (* <-lang_ru;; *);;
-        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/trdelnik.txt";;  *);;
-    *);
+    => nrel_recipe: ... (*
+            <-rrel_ingredients:...(*
+                -> concept_wheat_flour;;
+                -> concept_cinnamon;;//корица
+                -> concept_butter;;
+                -> concept_nut;;
+                -> concept_eqq;;
+                -> concept_milk;;
+                -> concept_ferment;;//дрожжи
+                -> concept_sugar;;
+            *);;
+            <- rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (трдельник)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/trdelnik.txt";;  *);;
+            *);;
+        *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/trdelnik.jpg"  (*  => nrel_format: format_jpg;;  *);; *);;

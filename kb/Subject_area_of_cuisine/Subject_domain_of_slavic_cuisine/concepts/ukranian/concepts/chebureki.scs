@@ -8,14 +8,19 @@ concept_ukr_chebureki
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [украинские чебуреки - ] (* <-lang_ru;; *);;
         *);;
-        => nrel_using_constants: ... (*
-           ->x;;
-        *);;
+        
     *);
-    <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (украинские чебуреки)] (* <-lang_ru;; *);;
-        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/chebureki.txt";;  *);;
-    *);
+   => nrel_recipe: ... (*
+            <-rrel_ingredients:...(*
+                ->x;;
+            *);;
+
+            <- rrel_instruction: ... (*
+                    => nrel_idtf: [Рецепт (украинские чебуреки)] (* <-lang_ru;; *);;
+                    <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/chebureki.txt";;  *);;
+                *);;
+           
+        *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         //<= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/borsch.png"  (*  => nrel_format: format_png;;  *);; *);;

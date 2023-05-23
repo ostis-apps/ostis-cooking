@@ -9,30 +9,33 @@ concept_pol_white_borsch
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [белый борщ - польская разновидность борща.] (* <-lang_ru;; *);;
         *);;
-        => nrel_using_constants: ... (*
-            -> concept_butter;;
-            -> concept_krakov_sausage;;//краковская колбаса
-            -> concept_garlic;;
-            -> concept_leek;;//лук-порей
-            -> concept_potato;;
-            -> concept_laurel_leaf;;
-            -> concept_marjoram;;//oregano
-            -> concept_sour_cream;;
-            -> concept_horseradish;;//хрен
-            -> concept_wheat_flour;;
-            -> concept_salt;;
-            -> concept_black_pepper;;//лук-порей
-            -> concept_fennel;;//укроп
-            -> concept_pasley;;//петрушка
-            -> concept_eqq;;//oregano
-            -> concept_water;;
+        
+    *);
+    => nrel_recipe: ... (*
+            <-rrel_ingredients:...(*
+                -> concept_butter;;
+                -> concept_krakov_sausage;;//краковская колбаса
+                -> concept_garlic;;
+                -> concept_leek;;//лук-порей
+                -> concept_potato;;
+                -> concept_laurel_leaf;;
+                -> concept_marjoram;;//oregano
+                -> concept_sour_cream;;
+                -> concept_horseradish;;//хрен
+                -> concept_wheat_flour;;
+                -> concept_salt;;
+                -> concept_black_pepper;;//лук-порей
+                -> concept_fennel;;//укроп
+                -> concept_pasley;;//петрушка
+                -> concept_eqq;;//oregano
+                -> concept_water;;
+            *);;
+            <- rrel_instruction: ... (*
+                => nrel_idtf: [Рецепт (белый борщ)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/white_borsch.txt";;  *);;
+            *);;
          
-        *);;
-    *);
-    <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (белый борщ)] (* <-lang_ru;; *);;
-        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/white_borsch.txt";;  *);;
-    *);
+        *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/borsch.jpg"  (*  => nrel_format: format_jpg;;  *);; *);;

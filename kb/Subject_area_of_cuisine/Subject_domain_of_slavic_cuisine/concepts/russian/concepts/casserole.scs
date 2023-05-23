@@ -9,14 +9,17 @@ concept_rus_casserole
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [запеканка -- это ... ] (* <-lang_ru;; *);;
         *);;
-        => nrel_using_constants: ... (*
-            -> concept_x;;
+        
+    *);
+    => nrel_recipe: ... (*
+            <-rrel_ingredients:...(*
+                -> concept_x;;
+            *);;
+            <- rrel_instruction: ... (*
+            => nrel_idtf: [Рецепт (запеканка)] (* <-lang_ru;; *);;
+            <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/casserole.txt" (*  => nrel_format: format_txt;;  *);;  *);;
         *);;
-    *);
-    <- rrel_instruction: ... (*
-        => nrel_idtf: [Рецепт (запеканка)] (* <-lang_ru;; *);;
-     //   <= nrel_sc_text_translation: ... (* -> rrel_example: "concept_rus_borsch.txt";;  *);;
-    *);
+        *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         //<= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/casserole.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
