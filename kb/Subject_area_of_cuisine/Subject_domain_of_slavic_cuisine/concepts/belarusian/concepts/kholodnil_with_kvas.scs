@@ -8,7 +8,6 @@
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [холодник на квасе - холодный свекольный суп на квасе] (* <-lang_ru;; *);;
         *);;
-        
     *);
     => nrel_recipe: ... (*
             <-rrel_ingredients:...(*
@@ -26,6 +25,26 @@
             *);;
             
         *);
+    => nrel_cooking_time: 90_min (*
+        =>nrel_main_idtf: [90 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 209_kk(*
+        =>nrel_main_idtf:[209 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:10_g(*
+        =>nrel_main_idtf:[10 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:15_g(*
+        =>nrel_main_idtf:[15 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:13_g(*
+        =>nrel_main_idtf:[13 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/kholodnik_with_kvas.png" (*  => nrel_format: format_png;;  *);;*);;

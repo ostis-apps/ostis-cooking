@@ -22,6 +22,26 @@
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/apple_souffle.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
         *);
+    => nrel_cooking_time: 25_min (*
+        =>nrel_main_idtf: [25 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 260_kk(*
+        =>nrel_main_idtf:[260 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:6_g(*
+        =>nrel_main_idtf:[6 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:42_g(*
+        =>nrel_main_idtf:[42 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:12_g(*
+        =>nrel_main_idtf:[12 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);  
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/images/apple_souffle.png" (*  => nrel_format: format_png;;  *);;*);;

@@ -9,7 +9,6 @@ concept_pol_white_borsch
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [белый борщ - польская разновидность борща.] (* <-lang_ru;; *);;
         *);;
-        
     *);
     => nrel_recipe: ... (*
             <-rrel_ingredients:...(*
@@ -27,18 +26,37 @@ concept_pol_white_borsch
                 -> concept_black_pepper;;//лук-порей
                 -> concept_fennel;;//укроп
                 -> concept_pasley;;//петрушка
-                -> concept_eqq;;//oregano
+                -> concept_egg;;//oregano
                 -> concept_water;;
             *);;
             <- rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (белый борщ)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/white_borsch.txt";;  *);;
             *);;
-         
         *);
+    => nrel_cooking_time: 70_min (*
+        =>nrel_main_idtf: [70 минут](* <-lang_ru;; *);;
+        <-concept_min;;
+    *);
+    => nrel_kkal: 639_kk(*
+        =>nrel_main_idtf:[639 ккал](* <-lang_ru;; *);;
+        <-concept_kkal;;
+    *);
+    => nrel_fats_content:52_g(*
+        =>nrel_main_idtf:[52 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_carbohydrates_content:21_g(*
+        =>nrel_main_idtf:[21 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);
+    => nrel_protein_content:22_g(*
+        =>nrel_main_idtf:[22 гр](* <-lang_ru;; *);;
+        <-concept_g;;
+    *);     
     <- rrel_key_sc_element: ... (*
         <- illustration;;
-        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/borsch.jpg"  (*  => nrel_format: format_jpg;;  *);; *);;
+        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/white_borsch.png"  (*  => nrel_format: format_png;;  *);; *);;
     *);;
     
 

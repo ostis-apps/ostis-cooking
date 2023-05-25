@@ -29,7 +29,6 @@ subject_domain_of_cuisine
         nrel_fats_content;// жиры
         rrel_ingredients; // ингредиенты
         rrel_instruction; // пошаговая инструкция
-        nrel_equipment; //оборудование
         nrel_recipe;;
 
    
