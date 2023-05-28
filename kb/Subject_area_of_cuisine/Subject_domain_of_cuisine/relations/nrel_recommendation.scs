@@ -1,0 +1,6 @@
+nrel_recommendation
+    <- sc_node_norole_relation;
+    => nrel_system_idtf:[nrel_recommendation] (* <- lang_en;; *);
+    => nrel_idtf: [recommendation*](*<- lang_en;;*);
+    => nrel_idtf: [совет*](*<- lang_ru;;*);
+    => nrel_main_idtf: [совет*](*<- lang_ru;;*);;

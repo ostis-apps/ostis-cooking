@@ -4,12 +4,12 @@
     => nrel_main_idtf: [затирка] (*<-lang_ru;;*);
     <- rrel_key_sc_element: ... (*
         <- definition;;
-        => nrel_idtf: [Опр. (затирка) ] (* <-lang_ru;; *);;
+        => nrel_idtf: [Опр. (затирка)] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
              -> rrel_example: [затирка - молочный суп.] (* <-lang_ru;; *);;
         *);;
     *);
-    => nrel_using_constants: ... (*
+    => nrel_recipe: ... (*
             <-rrel_ingredients:...(*
                 ->concept_milk;;
                 ->concept_egg;; 
@@ -26,6 +26,10 @@
     => nrel_cooking_time: 45_min (*
         =>nrel_main_idtf: [45 минут](* <-lang_ru;; *);;
         <-concept_min;;
+    *);
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
     *);
     => nrel_kkal: 310_kk(*
         =>nrel_main_idtf:[310 ккал](* <-lang_ru;; *);;

@@ -31,6 +31,10 @@ concept_rus_liver_cake
         =>nrel_main_idtf: [90 минут](* <-lang_ru;; *);;
         <-concept_min;;
     *);
+    => nrel_portion_number: 10_portion (*
+        =>nrel_main_idtf: [10 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     => nrel_kkal: 477_kk(*
         =>nrel_main_idtf:[477 ккал](* <-lang_ru;; *);;
         <-concept_kkal;;

@@ -1,9 +1,9 @@
 rrel_ingredients
     <- sc_node_role_relation;
-    => nrel_system_idtf:[ingredients] (* <- lang_en;; *);
-    => nrel_idtf: [ingredients](*<- lang_en;;*);
-    => nrel_idtf: [ингредиент](*<- lang_ru;;*);
-    => nrel_main_idtf: [ингредиент](*<- lang_ru;;*);;
+    => nrel_system_idtf:[rrel_ingredients] (* <- lang_en;; *);
+    => nrel_idtf: [ingredients'](*<- lang_en;;*);
+    => nrel_idtf: [ингредиент'](*<- lang_ru;;*);
+    => nrel_main_idtf: [ингредиент'](*<- lang_ru;;*);;
 
 definition -> ...
 (*

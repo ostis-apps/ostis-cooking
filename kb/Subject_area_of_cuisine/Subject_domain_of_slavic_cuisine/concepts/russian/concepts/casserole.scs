@@ -29,6 +29,10 @@ concept_rus_casserole
         =>nrel_main_idtf: [25 минут](* <-lang_ru;; *);;
         <-concept_min;;
     *);
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     => nrel_kkal: 258_kk(*
         =>nrel_main_idtf:[258 ккал](* <-lang_ru;; *);;
         <-concept_kkal;;

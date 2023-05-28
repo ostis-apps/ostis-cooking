@@ -23,6 +23,10 @@ concept_rus_charlotte
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/charlotte.txt" (*  => nrel_format: format_txt;;  *);;  *);;
             *);;
         *);
+    => nrel_portion_number: 8_portion (*
+        =>nrel_main_idtf: [8 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/charlotte.jpg" (*  => nrel_format: format_jpg;;  *);; *);;

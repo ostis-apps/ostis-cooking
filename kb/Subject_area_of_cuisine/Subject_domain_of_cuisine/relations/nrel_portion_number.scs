@@ -1,0 +1,7 @@
+nrel_portion_number
+    <- sc_node_norole_relation;
+    => nrel_system_idtf:[nrel_portiom_number] (* <- lang_en;; *);
+    => nrel_idtf: [portiom number*](*<- lang_en;;*);
+    => nrel_idtf: [количество порций*](*<- lang_ru;;*);
+    => nrel_main_idtf: [количество порций*](*<- lang_ru;;*);;
+

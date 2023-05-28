@@ -29,6 +29,10 @@ concept_czech_orange_cupcake
         =>nrel_main_idtf: [120 минут](* <-lang_ru;; *);;
         <-concept_min;;
     *);
+    => nrel_portion_number: 8_portion (*
+        =>nrel_main_idtf: [8 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     => nrel_kkal: 489_kk(*
         =>nrel_main_idtf:[489 ккал](* <-lang_ru;; *);;
         <-concept_kkal;;

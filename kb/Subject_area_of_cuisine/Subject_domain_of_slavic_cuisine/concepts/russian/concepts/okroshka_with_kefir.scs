@@ -31,6 +31,10 @@ concept_rus_okroshka_with_kefir
         =>nrel_main_idtf: [30 минут](* <-lang_ru;; *);;
         <-concept_min;;
     *);
+    => nrel_portion_number: 5_portion (*
+        =>nrel_main_idtf: [5 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     => nrel_kkal: 502_kk(*
         =>nrel_main_idtf:[502 ккал](* <-lang_ru;; *);;
         <-concept_kkal;;

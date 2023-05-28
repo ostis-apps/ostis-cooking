@@ -38,6 +38,10 @@ concept_pol_white_borsch
         =>nrel_main_idtf: [70 минут](* <-lang_ru;; *);;
         <-concept_min;;
     *);
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     => nrel_kkal: 639_kk(*
         =>nrel_main_idtf:[639 ккал](* <-lang_ru;; *);;
         <-concept_kkal;;

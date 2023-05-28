@@ -26,6 +26,10 @@ concept_rus_potato_draniki
         =>nrel_main_idtf: [30 минут](* <-lang_ru;; *);;
         <-concept_min;;
     *);
+    => nrel_portion_number: 8_portion (*
+        =>nrel_main_idtf: [8 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     => nrel_kkal: 584_kk(*
         =>nrel_main_idtf:[584 ккал](* <-lang_ru;; *);;
         <-concept_kkal;;
