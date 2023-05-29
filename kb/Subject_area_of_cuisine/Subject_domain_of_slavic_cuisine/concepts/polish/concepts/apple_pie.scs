@@ -29,6 +29,10 @@ concept_pol_apple_pie
         =>nrel_main_idtf: [40 минут](* <-lang_ru;; *);;
         <-concept_min;;
     *);
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     => nrel_kkal: 565_kk(*
         =>nrel_main_idtf:[565 ккал](* <-lang_ru;; *);;
         <-concept_kkal;;

@@ -1,7 +1,7 @@
 nrel_protein_content
     <- sc_node_norole_relation;
-    => nrel_system_idtf:[protein_content] (* <- lang_en;; *);
-    => nrel_idtf: [protein_content](*<- lang_en;;*);
-    => nrel_idtf: [белки](*<- lang_ru;;*);
-    => nrel_main_idtf: [белки](*<- lang_ru;;*);;
+    => nrel_system_idtf:[nrel_protein_content] (* <- lang_en;; *);
+    => nrel_idtf: [protein_content*](*<- lang_en;;*);
+    => nrel_idtf: [белки*](*<- lang_ru;;*);
+    => nrel_main_idtf: [белки*](*<- lang_ru;;*);;
 

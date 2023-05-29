@@ -31,6 +31,10 @@ concept_rus_herring_under_fur_coat
         =>nrel_main_idtf: [50 минут](* <-lang_ru;; *);;
         <-concept_min;;
     *);
+    => nrel_portion_number: 8_portion (*
+        =>nrel_main_idtf: [8 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     => nrel_kkal: 680_kk(*
         =>nrel_main_idtf:[680 ккал](* <-lang_ru;; *);;
         <-concept_kkal;;

@@ -25,6 +25,10 @@ concept_rus_rice_porridge_with_milk
         =>nrel_main_idtf: [30 минут](* <-lang_ru;; *);;
         <-concept_min;;
     *);
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     => nrel_kkal: 219_kk(*
         =>nrel_main_idtf:[219 ккал](* <-lang_ru;; *);;
         <-concept_kkal;;

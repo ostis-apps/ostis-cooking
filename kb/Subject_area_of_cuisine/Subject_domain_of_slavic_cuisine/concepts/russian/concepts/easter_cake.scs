@@ -28,6 +28,10 @@ concept_rus_easter_cake
             *);;
             
         *);
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     => nrel_cooking_time: 35_min (*
         =>nrel_main_idtf: [35 минут](* <-lang_ru;; *);;
         <-concept_min;;

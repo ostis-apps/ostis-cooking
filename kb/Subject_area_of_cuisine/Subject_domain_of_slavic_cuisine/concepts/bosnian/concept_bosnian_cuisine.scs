@@ -11,10 +11,16 @@ subject_domain_of_bosnian_cuisine
     =>nrel_main_idtf:[Subject domain of bosnian cuisine] (* <-lang_en;;*);
 	<-subject_domain; 
     ->rrel_maximum_studied_object_class:
-        concept_bosnian_cuisine;;
+        concept_bosnian_cuisine;
+    ->rrel_not_maximum_studied_object_class:
+        concept_bos_bosanski_lonac;
+        concept_bos_tufahije;;
 
 concept_bosnian_cuisine
     <-sc_node_not_relation;
     =>nrel_main_idtf:[боснийская кухня](*<-lang_ru;;*);
     =>nrel_main_idtf:[bosnian cuisine](*<-lang_en;;*);
+    =>nrel_specifics: ... (*
+        =>nrel_main_idtf: [использование говядины, баранины, молочных продуктов и специй.](* <-lang_ru;; *);;
+    *);
     <-concept_cuisine;;

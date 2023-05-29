@@ -26,6 +26,10 @@ concept_rus_cottage_cheese_pancakes
         =>nrel_main_idtf: [20 минут](* <-lang_ru;; *);;
         <-concept_min;;
     *);
+    => nrel_portion_number: 5_portion (*
+        =>nrel_main_idtf: [5 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     => nrel_kkal: 223_kk(*
         =>nrel_main_idtf:[223 ккал](* <-lang_ru;; *);;
         <-concept_kkal;;

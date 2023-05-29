@@ -27,6 +27,10 @@ concept_rus_mannik_with_kefir
         =>nrel_main_idtf: [25 минут](* <-lang_ru;; *);;
         <-concept_min;;
     *);
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     => nrel_kkal: 459_kk(*
         =>nrel_main_idtf:[459 ккал](* <-lang_ru;; *);;
         <-concept_kkal;;

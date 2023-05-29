@@ -29,6 +29,10 @@ concept_bel_babka
         =>nrel_main_idtf: [90 минут](* <-lang_ru;; *);;
         <-concept_min;;
     *);
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     => nrel_kkal: 468_kk(*
         =>nrel_main_idtf:[468 ккал](* <-lang_ru;; *);;
         <-concept_kkal;;
