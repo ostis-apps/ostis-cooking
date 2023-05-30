@@ -25,4 +25,5 @@ concept_italian_cuisine
     <-sc_node_not_relation;
     =>nrel_main_idtf:[итальянская кухня](*<-lang_ru;;*);
     =>nrel_main_idtf:[italian ncuisine](*<-lang_en;;*);
-    <-concept_cuisine;;
+    <-concept_cuisine;
+    =>nrel_specifics:[Простота рецептов, большое разнообразие блюд, высокое качество продуктов, использование сезонных ингредиентов.](*<-lang_ru;;*);;
