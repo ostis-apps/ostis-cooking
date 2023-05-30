@@ -11,7 +11,6 @@ subject_domain_of_ukranian_cuisine
     =>nrel_main_idtf:[Предметная область украинской кухни] (* <-lang_ru;;*);
     =>nrel_main_idtf:[Subject domain of ukranian cuisine] (* <-lang_en;;*);
 	<-subject_domain; 
-	
     ->rrel_maximum_studied_object_class:
         concept_ukranian_cuisine;
     ->rrel_not_maximum_studied_object_class:
@@ -23,4 +22,5 @@ concept_ukranian_cuisine
     <-sc_node_not_relation;
     =>nrel_main_idtf:[украинская кухня](*<-lang_ru;;*);
     =>nrel_main_idtf:[ukranian cuisine](*<-lang_en;;*);
+    =>nrel_specifics:  [обилие вареных, тушеных или печеных блюд из картофеля, мяса и овощей.](* <-lang_ru;; *);
     <-concept_cuisine;;

@@ -31,6 +31,10 @@
         =>nrel_main_idtf: [35 минут](* <-lang_ru;; *);;
         <-concept_min;;
     *);
+    => nrel_portion_number: 8_portion (*
+        =>nrel_main_idtf: [8 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     => nrel_kkal: 630_kk(*
         =>nrel_main_idtf:[630 ккал](* <-lang_ru;; *);;
         <-concept_kkal;;

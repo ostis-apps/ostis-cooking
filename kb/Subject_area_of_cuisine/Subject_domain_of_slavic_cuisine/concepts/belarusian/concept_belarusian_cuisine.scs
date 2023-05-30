@@ -24,4 +24,5 @@ concept_belarusian_cuisine
     <-sc_node_not_relation;
     =>nrel_main_idtf:[белорусская кухня](*<-lang_ru;;*);
     =>nrel_main_idtf:[belarusian cuisine](*<-lang_en;;*);
+    =>nrel_specifics:  [большое количество блюд из картофеля, а также использование разнообразных колбас, круп, грибов и свинины.](* <-lang_ru;; *);
     <-concept_cuisine;;

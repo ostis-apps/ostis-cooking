@@ -28,6 +28,10 @@ concept_rus_dumplings_with_meat
             *);;
             
         *);
+    => nrel_portion_number: 6_portion (*
+        =>nrel_main_idtf: [6 порций](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     => nrel_cooking_time: 30_min (*
         =>nrel_main_idtf: [30 минут](* <-lang_ru;; *);;
         <-concept_min;;

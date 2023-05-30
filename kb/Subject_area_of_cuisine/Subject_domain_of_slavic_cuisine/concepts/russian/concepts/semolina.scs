@@ -25,6 +25,10 @@ concept_rus_semolina
         =>nrel_main_idtf: [15 минут](* <-lang_ru;; *);;
         <-concept_min;;
     *);
+    => nrel_portion_number: 1_portion (*
+        =>nrel_main_idtf: [1 порция](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     => nrel_kkal: 323_kk(*
         =>nrel_main_idtf:[323 ккал](* <-lang_ru;; *);;
         <-concept_kkal;;

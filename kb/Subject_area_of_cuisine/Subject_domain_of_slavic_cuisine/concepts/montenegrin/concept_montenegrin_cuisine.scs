@@ -13,10 +13,14 @@ subject_domain_of_montenegrin_cuisine
 	<-subject_domain; 
 	
     ->rrel_maximum_studied_object_class:
-        concept_montenegrin_cuisine;;
+        concept_montenegrin_cuisine;
+    ->rrel_not_maximum_studied_object_class:
+        concept_mon_heldia;;
+        
 
 concept_montenegrin_cuisine
     <-sc_node_not_relation;
     =>nrel_main_idtf:[черногорская кухня](*<-lang_ru;;*);
     =>nrel_main_idtf:[montenegrin cuisine](*<-lang_en;;*);
+     =>nrel_specifics: [простота блюд, употребление говядины, ягнятины, телятины и говядины в тушеном виде.](* <-lang_ru;; *);
     <-concept_cuisine;;

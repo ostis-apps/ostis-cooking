@@ -30,6 +30,10 @@ concept_rus_brushwood
         =>nrel_main_idtf: [40 минут](* <-lang_ru;; *);;
         <-concept_min;;
     *);
+    => nrel_portion_number: 4_portion (*
+        =>nrel_main_idtf: [4 порции](* <-lang_ru;; *);;
+        <-concept_portion;;
+    *);
     => nrel_kkal: 3672_kk(*
         =>nrel_main_idtf:[3672 ккал](* <-lang_ru;; *);;
         <-concept_kkal;;
