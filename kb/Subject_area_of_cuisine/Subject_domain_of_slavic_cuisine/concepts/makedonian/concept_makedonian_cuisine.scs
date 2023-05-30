@@ -19,7 +19,5 @@ concept_makedonian_cuisine
     <-sc_node_not_relation;
     =>nrel_main_idtf:[македонская кухня](*<-lang_ru;;*);
     =>nrel_main_idtf:[makedonian cuisine](*<-lang_en;;*);
-     =>nrel_specifics: ... (*
-        =>nrel_main_idtf: [использование растительной пищи, говядины, баранины, молочных продуктов и специй-макало.](* <-lang_ru;; *);;
-    *);
+    =>nrel_specifics: [использование растительной пищи, говядины, баранины, молочных продуктов и специй-макало.](* <-lang_ru;; *);
     <-concept_cuisine;;

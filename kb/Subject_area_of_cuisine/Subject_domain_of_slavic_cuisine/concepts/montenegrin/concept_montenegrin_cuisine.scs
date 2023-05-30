@@ -22,7 +22,5 @@ concept_montenegrin_cuisine
     <-sc_node_not_relation;
     =>nrel_main_idtf:[черногорская кухня](*<-lang_ru;;*);
     =>nrel_main_idtf:[montenegrin cuisine](*<-lang_en;;*);
-     =>nrel_specifics: ... (*
-        =>nrel_main_idtf: [простота блюд, употребление говядины, ягнятины, телятины и говядины в тушеном виде.](* <-lang_ru;; *);;
-    *);
+     =>nrel_specifics: [простота блюд, употребление говядины, ягнятины, телятины и говядины в тушеном виде.](* <-lang_ru;; *);
     <-concept_cuisine;;

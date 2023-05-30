@@ -30,6 +30,7 @@ subject_domain_of_cuisine
         rrel_ingredients; // ингредиенты
         rrel_instruction; // пошаговая инструкция
         nrel_specifics;
+        nrel_portion_number;
         nrel_recommendation;
         nrel_recipe;;
 

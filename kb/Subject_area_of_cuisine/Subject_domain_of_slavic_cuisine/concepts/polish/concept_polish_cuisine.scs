@@ -22,7 +22,5 @@ concept_polish_cuisine
     <-sc_node_not_relation;
     =>nrel_main_idtf:[польская кухня](*<-lang_ru;;*);
     =>nrel_main_idtf:[polish cuisine](*<-lang_en;;*);
-    =>nrel_specifics: ... (*
-        =>nrel_main_idtf: [обилие закусок из мяса и картофеля.](* <-lang_ru;; *);;
-    *);
+    =>nrel_specifics: [обилие закусок из мяса и картофеля.](* <-lang_ru;; *);
     <-concept_cuisine;;
