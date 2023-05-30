@@ -20,7 +20,5 @@ concept_croatian_cuisine
     <-sc_node_not_relation;
     =>nrel_main_idtf:[хорватская кухня](*<-lang_ru;;*);
     =>nrel_main_idtf:[croatian cuisine](*<-lang_en;;*);
-    =>nrel_specifics: ... (*
-        =>nrel_main_idtf: [использование мяса – говядины, ягнятины, птицы.](* <-lang_ru;; *);;
-    *);
+    =>nrel_specifics:  [использование мяса – говядины, ягнятины, птицы.](* <-lang_ru;; *);
     <-concept_cuisine;;

@@ -22,7 +22,5 @@ concept_ukranian_cuisine
     <-sc_node_not_relation;
     =>nrel_main_idtf:[украинская кухня](*<-lang_ru;;*);
     =>nrel_main_idtf:[ukranian cuisine](*<-lang_en;;*);
-    =>nrel_specifics: ... (*
-        =>nrel_main_idtf: [обилие вареных, тушеных или печеных блюд из картофеля, мяса и овощей.](* <-lang_ru;; *);;
-    *);
+    =>nrel_specifics:  [обилие вареных, тушеных или печеных блюд из картофеля, мяса и овощей.](* <-lang_ru;; *);
     <-concept_cuisine;;

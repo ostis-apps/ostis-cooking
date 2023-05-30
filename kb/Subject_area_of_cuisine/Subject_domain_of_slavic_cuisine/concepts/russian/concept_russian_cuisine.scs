@@ -38,7 +38,5 @@ concept_russian_cuisine
     <-sc_node_not_relation;
     =>nrel_main_idtf:[русская кухня](*<-lang_ru;;*);
     =>nrel_main_idtf:[russian cuisine](*<-lang_en;;*);
-    =>nrel_specifics: ... (*
-        =>nrel_main_idtf: [обилие супов и каш, солений.](* <-lang_ru;; *);;
-    *);
+    =>nrel_specifics:  [обилие супов и каш, солений.](* <-lang_ru;; *);
     <-concept_cuisine;;

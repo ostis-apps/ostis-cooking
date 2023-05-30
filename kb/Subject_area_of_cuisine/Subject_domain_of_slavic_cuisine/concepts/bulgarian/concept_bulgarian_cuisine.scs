@@ -24,7 +24,5 @@ concept_bulgarian_cuisine
     <-sc_node_not_relation;
     =>nrel_main_idtf:[болгарская кухня](*<-lang_ru;;*);
     =>nrel_main_idtf:[bulgarian ncuisine](*<-lang_en;;*);
-    =>nrel_specifics: ... (*
-        =>nrel_main_idtf: [использование овощей и специй в большом количестве.](* <-lang_ru;; *);;
-    *);
+    =>nrel_specifics: [использование овощей и специй в большом количестве.](* <-lang_ru;; *);
     <-concept_cuisine;;

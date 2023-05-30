@@ -1,5 +1,9 @@
 rrel_ingredients
     <- sc_node_role_relation;
+    <-relation;
+    <-role_relation;
+    <-binary_relation;
+    <-oriented_relation;
     => nrel_system_idtf:[rrel_ingredients] (* <- lang_en;; *);
     => nrel_idtf: [ingredients'](*<- lang_en;;*);
     => nrel_idtf: [ингредиент'](*<- lang_ru;;*);
@@ -12,7 +16,7 @@ definition -> ...
         (*
             -> [ролевое бинарное отношение, связывающее рецепт блюда с множеством продуктов, необходимых для приготовления блюда.](*<- lang_ru;;*);;
         *);;
-    => nrel_main_idtf: [Опр.(ингредиенты)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Опр.(ингредиент')](*<- lang_ru;;*);;
     <= nrel_using_constants: ...
         (*
             ->concept_recipe;;
