@@ -57,7 +57,7 @@ subject_domain_of_slavic_cuisine
         concept_rus_liver_cake;
         concept_rus_casserole;
     
-     =>nrel_section_decomposition:{
+     =>nrel_private_subject_domain:
         subject_domain_of_bulgarian_cuisine;
         subject_domain_of_belarusian_cuisine;
         subject_domain_of_ukranian_cuisine;
@@ -68,8 +68,8 @@ subject_domain_of_slavic_cuisine
         subject_domain_of_croatian_cuisine;
         subject_domain_of_montenegrin_cuisine;
         subject_domain_of_polish_cuisine;
-        subject_domain_of_czech_cuisine
-	};;
+        subject_domain_of_czech_cuisine;;
+	
     
 
 

@@ -6,7 +6,8 @@ nrel_kkal
     <-oriented_relation;
     => nrel_system_idtf:[nrel_kkal] (* <- lang_en;; *);
     => nrel_idtf: [kkal*](*<- lang_en;;*);
-    => nrel_idtf: [калорийность*](*<- lang_ru;;*);;
+    => nrel_idtf: [калорийность*](*<- lang_ru;;*);
+    => nrel_main_idtf: [калорийность*](*<- lang_ru;;*);;
 
 definition -> ...
 (*
