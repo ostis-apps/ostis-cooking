@@ -1,0 +1,49 @@
+sc_node_not_relation -> concept_coconut_soup;;
+
+concept_coconut_soup
+    => nrel_main_idtf: [ Coconut soup ] (*<-lang_ru;;*);
+    => nrel_main_idtf: [ Кокосовый суп ] (*<-lang_en;;*);;
+
+concept_coconut_soup
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение ( Кокосовый суп ) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Кокосовый суп - фруктовый суп, приготовленный с помощью кокосового молока как главный ингредиент. ] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            -> concept_canola_oil;;
+            -> concept_onion;;
+            -> concept_jalapeno_pepper;;
+            -> concept_red_bell_pepper;;
+            -> concept_garlic;;
+            -> concept_vegetables_broth;; 
+            -> concept_canned_chickpeas;; 
+            -> concept_curry;; 
+            -> concept_tomatoes;; // in their own juice
+            -> concept_salt;; 
+            -> concept_black_pepper;; 
+            -> concept_rice;; 
+            -> concept_coconut_milk;; 
+            -> concept_parsley;; 
+        *);;
+    *);;
+
+concept_coconut_soup
+    <- rrel_instruction: ... (*
+        => nrel_idtf: [ Рецепт ( Кокосовый суп ) ] (* <-lang_ru;; *);;
+        /*<= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://html//coconut soup recipe.html";;
+        *);;*/
+    *);;
+
+concept_coconut_soup
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+       /* <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://photo//coconut_soup.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;*/
+    *);;
