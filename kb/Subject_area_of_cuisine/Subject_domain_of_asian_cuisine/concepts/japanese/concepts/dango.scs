@@ -7,7 +7,7 @@ concept_dango
         => nrel_idtf: [Определение (Данго) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Данго - японские клёцки или колобки из клейких сортов риса. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
             -> rrel_ingredients: ... (*
                 -> concept_rice_flour;; // рисовая мука
@@ -20,9 +20,7 @@ concept_dango
                 => nrel_idtf: [Рецепт (Данго)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/dango.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 30_min (*
         => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
         <- concept_min;;

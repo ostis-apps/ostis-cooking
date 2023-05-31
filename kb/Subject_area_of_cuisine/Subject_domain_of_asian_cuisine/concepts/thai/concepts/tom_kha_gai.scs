@@ -7,7 +7,7 @@ concept_tom_kha_gai
         => nrel_idtf: [Определение (Том кха гай) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Том кха гай - это острый и кисловатый острый суп на кокосовом молоке в тайской кухне. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
             -> rrel_ingredients: ... (*
                 -> concept_coconut_milk;;
@@ -27,9 +27,7 @@ concept_tom_kha_gai
                 => nrel_idtf: [Рецепт (Том кха гай)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/tom_kha_gai.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 30_min (*
         => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
         <- concept_min;;

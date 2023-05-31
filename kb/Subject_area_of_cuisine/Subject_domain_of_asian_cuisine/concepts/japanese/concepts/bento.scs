@@ -7,7 +7,7 @@ concept_bento
         => nrel_idtf: [Определение (Бэнто) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Бэнто - это японский термин для однопорционной упакованной еды. Традиционно бэнто включает в себя рис, рыбу или мясо и один или несколько видов нарезанных сырых или маринованных овощей в одной коробке с крышкой. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
             -> rrel_ingredients: ... (*
                 -> concept_chicken_breast;;
@@ -34,9 +34,7 @@ concept_bento
                 => nrel_idtf: [Рецепт (Бэнто)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/bento.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 20_min (*
         => nrel_main_idtf: [20 минут](* <- lang_ru;; *);;
         <- concept_min;;

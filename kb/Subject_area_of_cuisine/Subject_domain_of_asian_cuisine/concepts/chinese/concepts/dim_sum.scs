@@ -7,7 +7,7 @@ concept_dim_sum
         => nrel_idtf: [Определение (Димсам) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Димсам - это лёгкие блюда, которые в китайской традиции чаепития подают к столу вместе с чашкой китайского чая сорта пуэр, как правило, до обеда. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
             -> rrel_ingredients: ... (*
                 -> concept_ground_black_pepper;;
@@ -24,9 +24,7 @@ concept_dim_sum
                 => nrel_idtf: [Рецепт (Димсам)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/dim_sum.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 40_min (*
         => nrel_main_idtf: [40 минут](* <- lang_ru;; *);;
         <- concept_min;;

@@ -7,7 +7,7 @@ concept_curry_laksa
         => nrel_idtf: [Определение (Карри-лакса) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Карри-лакса - это блюдо, представляющее из себя лапшу в пряном бульоне с добавлением кокосового молока, гарнированную креветками, рыбой, курицей или мясом (всем вместе или в различных сочетаниях), зеленью и другими ингредиентами. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
             -> rrel_ingredients: ... (*
                 -> concept_cilantro_leaves;;
@@ -31,9 +31,7 @@ concept_curry_laksa
                 => nrel_idtf: [Рецепт (Карри-лакса)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/curry_laksa.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 60_min (*
         => nrel_main_idtf: [60 минут](* <- lang_ru;; *);;
         <- concept_min;;

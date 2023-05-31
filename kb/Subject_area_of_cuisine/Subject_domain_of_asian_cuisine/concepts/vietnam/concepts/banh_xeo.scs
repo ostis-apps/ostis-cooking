@@ -7,7 +7,7 @@ concept_banh_xeo
         => nrel_idtf: [Определение (Бань-сео) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Бань-сео - это популярные вьетнамские хрустящие рисовые блины с начинкой. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
             -> rrel_ingredients: ... (*
                 -> concept_fish_sauce;;
@@ -34,9 +34,7 @@ concept_banh_xeo
                 => nrel_idtf: [Рецепт (Бань-сео)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/banh_xeo.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 40_min (*
         => nrel_main_idtf: [40 минут](* <- lang_ru;; *);;
         <- concept_min;;

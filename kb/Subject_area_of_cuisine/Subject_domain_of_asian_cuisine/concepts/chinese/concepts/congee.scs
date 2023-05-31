@@ -7,7 +7,7 @@ concept_congee
         => nrel_idtf: [Определение (Конджи) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Конджи - это обобщающий термин для разных азиатских блюд из разваренного риса. По консистенции конджи напоминает густой суп или жидкую кашу. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
             -> rrel_ingredients: ... (*
                 -> concept_rice;;
@@ -25,9 +25,7 @@ concept_congee
                 => nrel_idtf: [Рецепт (Конджи)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/congee.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 95_min (*
         => nrel_main_idtf: [95 минут](* <- lang_ru;; *);;
         <- concept_min;;

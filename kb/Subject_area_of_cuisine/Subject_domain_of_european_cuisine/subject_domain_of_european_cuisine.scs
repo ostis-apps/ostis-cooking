@@ -58,9 +58,10 @@ subject_domain_of_european_cuisine
 	concept_gingerbread;
 	concept_apple_strudel;
 	concept_berliner;
-	concept_currywurst;;
+	concept_currywurst;
+	
+	=>nrel_private_subject_domain:
 
-     =>nrel_private_subject_domain:
         subject_domain_of_austrian_cuisine;
         subject_domain_of_british_cuisine;
         subject_domain_of_finnish_cuisine;

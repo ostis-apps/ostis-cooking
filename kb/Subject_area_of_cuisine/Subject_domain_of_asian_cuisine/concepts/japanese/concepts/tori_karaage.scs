@@ -7,7 +7,7 @@ concept_tori_karaage
         => nrel_idtf: [Определение (Тори-карааге) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Тори-карааге - это куриное филе в хрустящей панировке по-японски. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
             -> rrel_ingredients: ... (*
                 -> concept_sake;;
@@ -25,9 +25,7 @@ concept_tori_karaage
                 => nrel_idtf: [Рецепт (Тори-карааге)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/tori_karaage.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 30_min (*
         => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
         <- concept_min;;

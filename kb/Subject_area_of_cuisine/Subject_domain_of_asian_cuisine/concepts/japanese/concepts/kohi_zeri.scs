@@ -8,6 +8,7 @@ concept_kohi_zeri
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Кохи-зелли - это десерт из желатина и кофе. ] (* <-lang_ru;; *);;
         *);;
+    *);
         => nrel_recipe: ... (*
             -> rrel_ingredients: ... (*
                 -> concept_sugar;;
@@ -23,9 +24,7 @@ concept_kohi_zeri
                 => nrel_idtf: [Рецепт (Кохи-зелли)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kohi_zeri.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 20_min (*
         => nrel_main_idtf: [20 минут](* <- lang_ru;; *);;
         <- concept_min;;

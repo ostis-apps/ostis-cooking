@@ -7,7 +7,7 @@ concept_lentil_soup
         => nrel_idtf: [Определение (Чечевичный суп) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Чечевичный суп - это сытная густая похлебка с чечевицей в качестве основного ингредиента. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
             -> rrel_ingredients: ... (*
                 -> concept_red_lentils;;
@@ -28,9 +28,7 @@ concept_lentil_soup
                 => nrel_idtf: [Рецепт (Чечевичный суп)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/lentil_soup.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 40_min (*
         => nrel_main_idtf: [40 минут](* <- lang_ru;; *);;
         <- concept_min;;

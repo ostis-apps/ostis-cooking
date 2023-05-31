@@ -7,7 +7,7 @@ concept_kung_pao
         => nrel_idtf: [Определение (Гунбао) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Гунбао - это китайское блюдо из кусочков куриного филе, обжаренных с арахисом и красным перцем чили. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
             -> rrel_ingredients: ... (*
                 -> concept_chicken_fillet;;
@@ -30,9 +30,7 @@ concept_kung_pao
                 => nrel_idtf: [Рецепт (Гунбао)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kung_pao.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 30_min (*
         => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
         <- concept_min;;

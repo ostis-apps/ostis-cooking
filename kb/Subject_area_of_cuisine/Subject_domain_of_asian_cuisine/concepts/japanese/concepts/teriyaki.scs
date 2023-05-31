@@ -7,7 +7,7 @@ concept_teriyaki
         => nrel_idtf: [Определение (Терияки) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Терияки - это традиционный японский способ обжарки с использованием распространённого в японской кухне сладкого соуса. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
             -> rrel_ingredients: ... (*
                 -> concept_chicken_fillet;;
@@ -25,9 +25,7 @@ concept_teriyaki
                 => nrel_idtf: [Рецепт (Терияки)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/teriyaki.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 30_min (*
         => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
         <- concept_min;;

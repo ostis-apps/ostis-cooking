@@ -7,7 +7,7 @@ concept_sinabawang
         => nrel_idtf: [Определение (Филиппинский овощной суп утан) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Филиппинский овощной суп утан - это филиппинский овощной суп, приготовленный из листовых овощей и различных других овощей в бульоне, приправленном бульоном из морепродуктов или пати ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
             -> rrel_ingredients: ... (*
                 -> concept_water;;
@@ -34,9 +34,7 @@ concept_sinabawang
                 => nrel_idtf: [Рецепт (Филиппинский овощной суп утан)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/sinabawang.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 60_min (*
         => nrel_main_idtf: [60 минут](* <- lang_ru;; *);;
         <- concept_min;;

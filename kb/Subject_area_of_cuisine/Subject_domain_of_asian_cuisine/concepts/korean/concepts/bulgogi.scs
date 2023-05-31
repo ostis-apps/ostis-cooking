@@ -7,7 +7,7 @@ concept_bulgogi
         => nrel_idtf: [Определение (Пулькоги) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Пулькоги - это блюдо корейской кухни, род барбекю, обычно готовится из тонких маринованных ломтиков говядины или свинины. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
             -> rrel_ingredients: ... (*
                 -> concept_beef_tenderloin;;
@@ -24,9 +24,7 @@ concept_bulgogi
                 => nrel_idtf: [Рецепт (Пулькоги)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/bulgogi.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 60_min (*
         => nrel_main_idtf: [60 минут](* <- lang_ru;; *);;
         <- concept_min;;

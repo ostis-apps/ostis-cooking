@@ -7,7 +7,7 @@ concept_omurice
         => nrel_idtf: [Определение (Омурайсу) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Омурайсу - японское блюдо, состоящее из жареного риса, покрытого или завернутого в омлет, и украшенное кетчупом. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
             -> rrel_ingredients: ... (*
                 -> concept_onion;; // репчатый лук (обычный)
@@ -27,9 +27,7 @@ concept_omurice
                 => nrel_idtf: [Рецепт (Омурайсу)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/omurice.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 25_min (*
         => nrel_main_idtf: [25 минут](* <- lang_ru;; *);;
         <- concept_min;;
