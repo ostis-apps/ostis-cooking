@@ -22,7 +22,7 @@ concept_meat_meatballs_with_cheese
 			->concept_seasonings;;
 			->concept_onion;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (мясные тефтели с сыром)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/meat_meatballs_with_cheese.txt";;*);;
 	*);;

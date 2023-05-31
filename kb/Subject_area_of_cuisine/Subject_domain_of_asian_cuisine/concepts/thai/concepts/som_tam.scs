@@ -9,7 +9,7 @@ concept_som_tam
             -> rrel_example: [ Сом там - это салат из зеленой папайи северо-восточного Таиланда. ] (* <-lang_ru;; *);;
         *);;
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_green_papaya;;
                 -> concept_peanuts;;
                 -> concept_garlic;;
@@ -21,7 +21,7 @@ concept_som_tam
                 -> concept_fish_sauce;;
                 -> concept_green_beans;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Сом там)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/som_tam.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

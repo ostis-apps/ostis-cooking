@@ -25,7 +25,7 @@ concept_apple_strudel
 			->concept_cranberries;;
 			->concept_banana;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (штрудель яблочный)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/apple_strudel.txt";;*);;
 	*);;

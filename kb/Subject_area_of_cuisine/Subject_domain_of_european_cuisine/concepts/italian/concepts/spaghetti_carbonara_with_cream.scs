@@ -23,7 +23,7 @@ concept_spaghetti_carbonara_with_cream
 			->concept_ground_black_pepper;;
 			->concept_grated_parmesan_cheese;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (спагетти карбонара со сливками)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/spaghetti_carbonara_with_cream.txt";;*);;
 	*);;

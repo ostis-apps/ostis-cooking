@@ -20,7 +20,7 @@ concept_potato_rolls_with_herring
 			->concept_mayonnaise;;
 			->concept_dry_nori_algae;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (картофельные роллы с сельдью)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/potato_rolls_with_herring.txt";;*);;
 	*);;

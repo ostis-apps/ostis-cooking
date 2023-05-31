@@ -11,7 +11,7 @@ concept_rus_pea_soup
         *);;
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 -> concept_peas;;
                 -> concept_potato;;
                 -> concept_smoked_pork_ribs;;
@@ -22,7 +22,7 @@ concept_rus_pea_soup
                 -> concept_salt;;
                 -> concept_black_pepper;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (гороховый суп)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/pea_soup.txt" (*  => nrel_format: format_txt;;  *);;  *);;
             *);;

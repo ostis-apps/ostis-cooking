@@ -21,7 +21,7 @@ concept_tortilla_with_cilantro
 			->concept_egg;;
 			->concept_potato;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (тортилья с кинзой)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/tortilla_with_cilantro.txt";;*);;
 	*);;

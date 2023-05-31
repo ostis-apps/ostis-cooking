@@ -25,7 +25,7 @@ concept_homemade_ratatouille
 			->concept_punch;;
 			->concept_ground_black_pepper;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (домашний рататуй)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/homemade_ratatouille.txt";;*);;
 	*);;

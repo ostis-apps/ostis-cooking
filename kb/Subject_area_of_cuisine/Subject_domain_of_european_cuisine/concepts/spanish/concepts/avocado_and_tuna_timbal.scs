@@ -21,7 +21,7 @@ concept_avocado_and_tuna_timbal
 			->concept_lemon_juice;;
 			->concept_finely_chopped_garlic;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (тимбал из авокадо и тунца)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/avocado_and_tuna_timbal.txt";;*);;
 	*);;

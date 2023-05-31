@@ -9,7 +9,7 @@ concept_roti_john
             -> rrel_example: [ Роти-джон - это бутерброд с омлетом, который, как полагают, впервые был приготовлен в Сингапуре в 1960-х или 1970-х годах. ] (* <-lang_ru;; *);;
         *);;
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_french_baguette;;
                 -> concept_ground_beef;;
                 -> concept_onion;;
@@ -20,7 +20,7 @@ concept_roti_john
                 -> concept_vegetable_oil;;
                 -> concept_salt;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Роти-джон)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/roti_john.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

@@ -12,13 +12,13 @@ concept_pol_kletski
         
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 -> concept_wheat_bread;;
                 -> concept_garlic;;//корица
                 -> concept_egg;;
                 -> concept_parsley;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (клецки)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kletski.txt";;  *);;
             *);;

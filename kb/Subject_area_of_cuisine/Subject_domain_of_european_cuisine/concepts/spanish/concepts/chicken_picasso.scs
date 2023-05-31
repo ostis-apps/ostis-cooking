@@ -27,7 +27,7 @@ concept_chicken_picasso
 			->concept_butter;;
 			->concept_ground_black_pepper;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (курица Пикассо)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/chicken_picasso.txt";;*);;
 	*);;

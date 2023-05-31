@@ -4,7 +4,7 @@ concept_chinese_chicken
     => nrel_main_idtf: [ Chinese chicken in sweet and sour sauce ] (*<-lang_en;;*);
     <- rrel_key_sc_element: ... (*
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_rice;;
                 -> concept_garlic;;
                 -> concept_ginger;;
@@ -16,7 +16,7 @@ concept_chinese_chicken
                 -> concept_sesame_oil;;
                 -> concept_chicken_broth;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Курица в кисло-сладком соусе по-китайски)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/chinese_chicken.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

@@ -23,7 +23,7 @@ concept_kefte
 			->concept_salt;;
 			->concept_ground_black_pepper;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (кёфте)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kefte.txt";;*);;
 	*);;

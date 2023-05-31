@@ -10,7 +10,7 @@
         *);;
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 ->concept_beet;;//свекла
                 ->concept_beet_kvas;; //свекольный квас
                 ->concept_cucumber;;//огурец
@@ -19,7 +19,7 @@
                 ->concept_onion;; //лук
                 ->concept_dill;;//укроп
             *);;
-            <-rrel_instruction:...(*
+            ->rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (холодник на квасе)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kholodnik_with_kvas.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

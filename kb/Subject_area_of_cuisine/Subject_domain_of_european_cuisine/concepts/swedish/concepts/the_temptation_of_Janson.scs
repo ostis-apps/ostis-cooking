@@ -22,7 +22,7 @@ concept_the_temptation_of_Janson
 			->concept_salt;;
 			->concept_butter;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (искушение Янсона)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/the_temptation_of_Janson.txt";;*);;
 	*);;

@@ -11,7 +11,7 @@
         
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 ->concept_sweet_pepper;;
                 ->concept_plum_tomato;; 
                 ->concept_eggplant;;
@@ -21,7 +21,7 @@
                 ->concept_sugar;;
                 ->concept_salt;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (лютеница)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/lutenitsa.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

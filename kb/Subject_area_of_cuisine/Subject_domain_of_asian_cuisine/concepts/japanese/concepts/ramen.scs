@@ -9,7 +9,7 @@ concept_ramen
             -> rrel_example: [ Рамен - это японский суп с пшеничной лапшой. ] (* <-lang_ru;; *);;
         *);;
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_pork_belly;; // свиная грудинка
                 -> concept_ginger;; // имбирь
                 -> concept_soy_sauce;; // соевый соус
@@ -25,7 +25,7 @@ concept_ramen
                 -> concept_cilantro;; // кинза
                 -> concept_chicken_broth;; // куриный бульон
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Рамен)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/ramen.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

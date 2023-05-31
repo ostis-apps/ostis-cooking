@@ -9,7 +9,7 @@ concept_yakisoba
             -> rrel_example: [ Якисоба - это жареная лапша в соусе в китайском стиле. ] (* <-lang_ru;; *);;
         *);;
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_chicken_fillet;;
                 -> concept_carrot;;
                 -> concept_olive_oil;;
@@ -19,7 +19,7 @@ concept_yakisoba
                 -> concept_onion;;
                 -> concept_balsamic_vinegar;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Якисоба)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/yakisoba.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

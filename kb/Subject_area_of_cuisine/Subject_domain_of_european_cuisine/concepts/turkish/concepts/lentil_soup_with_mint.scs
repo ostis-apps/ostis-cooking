@@ -28,7 +28,7 @@ concept_lentil_soup_with_mint
 			->concept_sugar;;
 			->concept_ground_black_pepper;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (cуп из чечевицы)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/lentil_soup_with_mint.txt";;*);;
 	*);;

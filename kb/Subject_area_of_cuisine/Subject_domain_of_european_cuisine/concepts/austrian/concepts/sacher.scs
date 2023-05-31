@@ -24,7 +24,7 @@ concept_sacher
 			->concept_egg_white;;
 			->concept_apricot_jam;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (захер)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/sacher.txt";;*);;
 	*);;

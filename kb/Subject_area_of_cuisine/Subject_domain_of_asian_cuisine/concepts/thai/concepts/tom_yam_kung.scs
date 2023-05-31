@@ -9,7 +9,7 @@ concept_tom_yam_kung
             -> rrel_example: [ Том ям кунг - это тайский суп на курином бульоне с креветками, поражающий своим кисло-сладко-острым вкусом. ] (* <-lang_ru;; *);;
         *);;
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_red_chili_pepper;;
                 -> concept_galangal;;
                 -> concept_cherry_tomato;;
@@ -27,7 +27,7 @@ concept_tom_yam_kung
                 -> concept_cilantro;;
                 -> concept_vegetable_oil;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Том ям кунг)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/tom_yam_kung.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

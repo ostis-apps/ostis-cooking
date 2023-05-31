@@ -21,7 +21,7 @@ concept_risotto_with_champignons
 			->concept_salt;;
 			->concept_saffron;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (ризотто с шампиньонами)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/risotto_with_champignons.txt";;*);;
 	*);;

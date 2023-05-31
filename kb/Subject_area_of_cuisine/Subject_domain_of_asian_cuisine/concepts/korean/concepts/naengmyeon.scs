@@ -9,7 +9,7 @@ concept_naengmyeon
             -> rrel_example: [ Нэнмён - это в корейской кухне холодная лапша с водой, разбавленной с соевым соусом и горчицей. . ] (* <-lang_ru;; *);;
         *);;
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_chicken_fillet;;
                 -> concept_beef_fillet;;
                 -> concept_duck_fillet;;
@@ -24,7 +24,7 @@ concept_naengmyeon
                 -> concept_chili_pepper;;
                 -> concept_salt;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Нэнмён)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/naengmyeon.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

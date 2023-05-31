@@ -10,13 +10,13 @@ concept_rus_rice_porridge_with_milk
         *);;
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 -> concept_rice;;
                 -> concept_milk;;
                 -> concept_salt;;
                 -> concept_water;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (молочная рисовая каша)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/rice_porridge_with_milk.txt" (*  => nrel_format: format_txt;;  *);;  *);;
             *);;

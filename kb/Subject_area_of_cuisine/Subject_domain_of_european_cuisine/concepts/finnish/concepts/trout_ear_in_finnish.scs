@@ -21,7 +21,7 @@ concept_trout_ear_in_finnish
 			->concept_black_pepper;;
 			->concept_dill;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (уха из форели по-фински)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/trout_ear_in_finnish.txt";;*);;
 	*);;

@@ -22,7 +22,7 @@ concept_viennese_chicken
 			->concept_wheat_flour;;
 			->concept_ground_white_pepper;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (курица по-венски)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/viennese_chicken.txt";;*);;
 	*);;
