@@ -9,7 +9,7 @@ concept_nasi_goreng
             -> rrel_example: [ Наси-горенг - это блюдо, которое представляет собой обжаренную в растительном масле смесь риса с измельчёнными продуктами животного или растительного происхождения. ] (* <-lang_ru;; *);;
         *);;
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_boiled_jasmine_rice;;
                 -> concept_chicken_fillet;;
                 -> concept_vegetable_oil;;
@@ -23,7 +23,7 @@ concept_nasi_goreng
                 -> concept_lime;;
                 -> concept_green_onions;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Наси-горенг)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/nasi_goreng.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

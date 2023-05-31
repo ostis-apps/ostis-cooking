@@ -10,7 +10,7 @@ concept_czech_fried_cheese
         *);;
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:..(*
+            ->rrel_ingredients:..(*
                 -> concept_breadcrumbs;;
                 -> concept_wheat_flour;;
                 -> concept_cheese;;
@@ -18,7 +18,7 @@ concept_czech_fried_cheese
                 -> concept_egg;;
                 -> concept_vegetable_oil;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (чешский жареный сыр)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/fried_cheese.txt";;  *);;
             *);;

@@ -9,7 +9,7 @@ concept_misoshiru
             -> rrel_example: [ Мисосиру - это блюдо японской кухни, суп с растворённой в нём пастой мисо. ] (* <-lang_ru;; *);;
         *);;
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_water;;
                 -> concept_dashi_powder;; // порошок даши (dashinomoto)
                 -> concept_miso_pasta;;
@@ -17,7 +17,7 @@ concept_misoshiru
                 -> concept_wakame_seaweed;;
                 -> concept_green_onions;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Мисосиру)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/misoshiru.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
@@ -82,7 +82,7 @@ concept_misoshiru
         *);;
     *);
 
-     <- rrel_instruction: ... (*
+     -> rrel_instruction: ... (*
         => nrel_idtf: [Рецепт (Мисосиру)] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/misoshiru.txt"(*  => nrel_format: format_txt;;  *);;  *);;
     *);

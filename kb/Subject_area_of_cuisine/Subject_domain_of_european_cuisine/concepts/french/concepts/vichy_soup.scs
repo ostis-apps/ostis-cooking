@@ -21,7 +21,7 @@ concept_vichy_soup
 			->concept_ground_black_pepper;;
 			->concept_cream;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (суп вишисуаз)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/vichy_soup.txt";;*);;
 	*);;

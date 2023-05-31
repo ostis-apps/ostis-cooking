@@ -9,7 +9,7 @@ concept_onigiri
             -> rrel_example: [ Онигири - это блюдо японской кухни из пресного риса, слепленного в виде треугольника или шара. Обычно в онигири кладут начинку и заворачивают в лист сушёных водорослей нори. ] (* <-lang_ru;; *);;
         *);;
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_sushi_rice;;
                 -> concept_water;;
                 -> concept_salt;;
@@ -18,7 +18,7 @@ concept_onigiri
                 -> concept_mayonnaise;;
                 -> concept_soy_sauce;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Онигири)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/onigiri.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

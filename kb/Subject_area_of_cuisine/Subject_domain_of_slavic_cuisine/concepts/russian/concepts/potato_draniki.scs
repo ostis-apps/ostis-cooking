@@ -10,14 +10,14 @@ concept_rus_potato_draniki
         *);;
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 -> concept_potato;;
                 -> concept_wheat_flour;;
                 -> concept_egg;;
                 -> concept_salt;;
                 -> concept_vegetable_oil;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (картофельные драники)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/draniki.txt" (*  => nrel_format: format_txt;;  *);;  *);;
             *);;

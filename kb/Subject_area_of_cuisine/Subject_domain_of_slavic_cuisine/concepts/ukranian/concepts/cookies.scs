@@ -10,14 +10,14 @@ concept_ukr_currant_cookies
         *);;
     *);
    => nrel_recipe: ... (* //10
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 ->concept_currant;;//+-
                 ->concept_butter;;//200
                 ->concept_egg;;//3
                 ->concept_wheat_flour;;//400
                 ->concept_sugar;;//100
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                     => nrel_idtf: [Рецепт (печенье со смородиной)] (* <-lang_ru;; *);;
                     <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/cookies.txt";;  *);;
                 *);;

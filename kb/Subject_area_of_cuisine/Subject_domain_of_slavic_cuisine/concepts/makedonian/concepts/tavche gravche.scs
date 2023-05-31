@@ -10,7 +10,7 @@
         *);;
     *);
    => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 ->concept_dry_white_bean;;
                 ->concept_onion;; //тесто фило 
                 ->concept_garlic;;//жир
@@ -25,7 +25,7 @@
                 ->concept_laurel_leaf;;
                 ->concept_salt;;
             *);;
-             <- rrel_instruction: ... (*
+             -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (тавче гравче)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/tavche_gravche.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

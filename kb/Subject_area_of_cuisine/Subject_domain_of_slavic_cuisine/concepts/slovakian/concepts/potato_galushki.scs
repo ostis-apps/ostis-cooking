@@ -10,7 +10,7 @@
         *);;
     *);
    => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 ->concept_potato;;
                 ->concept_flour;; 
                 ->concept_smoked_bacon;;
@@ -18,7 +18,7 @@
                 ->concept_greenery;;
                 ->concept_salt;;
             *);;
-             <- rrel_instruction: ... (*
+             -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (картофельные галушки)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/potato_galushki.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

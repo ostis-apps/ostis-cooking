@@ -10,14 +10,14 @@ concept_czech_rice_with_mushrooms
         *);;
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:..(*
+            ->rrel_ingredients:..(*
                 -> concept_mushrooms;;
                 -> concept_carrot;;
                 -> concept_sour_cream;;
                 -> concept_onion;;
                 -> concept_rice;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (рис с грибами и сметаной)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/rice_with_mushrooms.txt";;  *);;
             *);;

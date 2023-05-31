@@ -24,7 +24,7 @@ concept_berliner
 			->concept_ground_cinnamon;;
 			->concept_cherry_jam;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (берлинер)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/berliner.txt";;*);;
 	*);;

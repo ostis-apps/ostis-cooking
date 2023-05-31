@@ -11,14 +11,14 @@ concept_rus_mannik_with_kefir
         *);;
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 -> concept_semolina;;
                 -> concept_kefir;;
                 -> concept_sugar;;
                 -> concept_egg;;
                 -> concept_soda;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (манник на кефире)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/mannik_with_kefir.txt" (*  => nrel_format: format_txt;;  *);;  *);;
             *);;

@@ -11,12 +11,12 @@
         
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 ->concept_fish;;
                 ->concept_sea_salt;; 
                 ->concept_herbes_de_provence;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (рыба под солью)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/fish_with_salt.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

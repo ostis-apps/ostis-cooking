@@ -9,7 +9,7 @@ concept_mochi
             -> rrel_example: [ Моти - это  японский вид рисового теста. Моти делается из истолчённого в пасту клейкого риса, особого известного с давнего времени сорта мотигомэ, который при долгом толчении и смачивании приобретает сладкий вкус. ] (* <-lang_ru;; *);;
         *);;
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_rice_flour;;
                 -> concept_water;;
                 -> concept_sugar;;
@@ -17,7 +17,7 @@ concept_mochi
                 -> concept_chocolate;;
                 -> concept_fruit;;   
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Моти)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/mochi.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

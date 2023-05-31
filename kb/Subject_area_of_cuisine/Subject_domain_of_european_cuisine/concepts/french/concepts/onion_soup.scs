@@ -24,7 +24,7 @@ concept_onion_soup
 			->concept_chicken_broth;;
 			->concept_french_baguette;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (луковый суп)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/onion_soup.txt";;*);;
 	*);;

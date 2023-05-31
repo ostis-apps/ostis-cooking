@@ -9,7 +9,7 @@ concept_chicken_tikka_masala
             -> rrel_example: [ Курица тикка-масала - блюдо индийской кухни, состоящее из кусочков курицы и густого острого соуса. ] (* <-lang_ru;; *);;
         *);;
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_sunflower_oil;;
                 -> concept_cumin;;
                 -> concept_laurel_leaf;;
@@ -29,7 +29,7 @@ concept_chicken_tikka_masala
                 -> concept_garam_masala;;
                 -> concept_lemon_juice;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Курица тикка-масала)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/chicken_tikka_masala.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

@@ -11,7 +11,7 @@ concept_rus_okroshka_with_kefir
         *);;
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 -> concept_potato;;
                 -> concept_onion;;
                 -> concept_fennel;;
@@ -22,7 +22,7 @@ concept_rus_okroshka_with_kefir
                 -> concept_ham;;
                 -> concept_salt;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (окрошка на кефире)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/okroshka_with_kefir.txt" (*  => nrel_format: format_txt;;  *);;  *);;
             *);;

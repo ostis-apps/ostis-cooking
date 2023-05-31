@@ -10,7 +10,7 @@
         *);;
     *);
    => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 ->concept_pasta;;
                 ->concept_white_cabbage;; 
                 ->concept_smoked_bacon;;
@@ -20,7 +20,7 @@
                 ->concept_vegetable_oil;;
                 ->concept_black_pepper;;
             *);;
-             <- rrel_instruction: ... (*
+             -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (макароны с молодой капустой и беконом)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/pasta_with_bacon_cabbage.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

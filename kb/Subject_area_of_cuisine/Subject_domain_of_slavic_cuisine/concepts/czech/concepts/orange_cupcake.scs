@@ -11,7 +11,7 @@ concept_czech_orange_cupcake
         *);;
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:..(*
+            ->rrel_ingredients:..(*
                 -> concept_sugar;;
                 -> concept_wheat_flour;;
                 -> concept_orange;;
@@ -20,7 +20,7 @@ concept_czech_orange_cupcake
                 -> concept_baking_powder;;
                 -> concept_vanilla_sugar;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (апельсиновый кекс)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/orange_cupcake.txt";;  *);;
             *);;

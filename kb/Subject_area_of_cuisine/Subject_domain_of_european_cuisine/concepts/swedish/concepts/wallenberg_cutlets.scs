@@ -23,7 +23,7 @@ concept_wallenberg_cutlets
 			->concept_butter;;
 			->concept_frozen_green_peas;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (котлеты Валленберг)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/wallenberg_cutlets.txt";;*);;
 	*);;

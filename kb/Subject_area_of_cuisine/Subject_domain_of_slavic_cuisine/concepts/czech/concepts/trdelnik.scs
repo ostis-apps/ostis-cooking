@@ -11,7 +11,7 @@ concept_czech_trdelnik
         *);;
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 -> concept_wheat_flour;;
                 -> concept_cinnamon;;//корица
                 -> concept_butter;;
@@ -21,7 +21,7 @@ concept_czech_trdelnik
                 -> concept_ferment;;//дрожжи
                 -> concept_sugar;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (трдельник)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/trdelnik.txt";;  *);;
             *);;

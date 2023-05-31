@@ -25,7 +25,7 @@ concept_cod_ear_in_norwegian
 			->concept_salt;;
 			->concept_ground_black_pepper;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (уха из трески по-норвежски)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/cod_ear_in_norwegian.txt";;*);;
 	*);;

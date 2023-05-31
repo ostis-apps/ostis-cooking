@@ -22,7 +22,7 @@ concept_finnish_kalakukko_pie
 			->concept_salt;;
  			->concept_pork_belly;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (финский пирог калакукко)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/finnish_kalakukko_pie.txt";;*);;
 	*);;

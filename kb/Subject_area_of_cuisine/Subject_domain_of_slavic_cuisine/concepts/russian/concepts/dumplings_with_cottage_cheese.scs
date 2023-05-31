@@ -12,14 +12,14 @@ concept_rus_dumplings_with_cottage_cheese
         
     *);
    => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 ->concept_sugar;;
                 ->concept_dry_cottage_cheese;;
                 ->concept_egg;;
                 ->concept_salt;;
                 ->concept_wheat_flour;;
             *);;
-             <- rrel_instruction: ... (*
+             -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (вареники с творогом)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/dumplings_with_cottage_cheese.txt" (*  => nrel_format: format_txt;;  *);;  *);;
             *);;

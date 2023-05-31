@@ -24,7 +24,7 @@ concept_viennese_strudel
 			->concept_raisin;;
 			->concept_cinnamon;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (венский штрудель)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/viennese_strudel.txt";;*);;
 	*);;

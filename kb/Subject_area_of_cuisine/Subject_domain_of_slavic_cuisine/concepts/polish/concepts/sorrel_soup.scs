@@ -10,7 +10,7 @@ concept_pol_sorrel_soup
              -> rrel_example: [щавелевый суп - польски деревенский суп из щавеля, картофеля и яиц.] (* <-lang_ru;; *);;
         *);;*);
         => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                     -> concept_meet_broth;;
                     -> concept_sorrel;;
                     -> concept_potato;;
@@ -19,7 +19,7 @@ concept_pol_sorrel_soup
                     -> concept_salt;;
                     -> concept_black_pepper;;
                 *);;
-            <-rrel_instruction:...(*
+            ->rrel_instruction:...(*
                     => nrel_idtf: [Рецепт (щавелевый суп)] (* <-lang_ru;; *);;
                     <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/sorrel_soup.txt"(*  => nrel_format: format_txt;;  *);;  *);;
                 *);;

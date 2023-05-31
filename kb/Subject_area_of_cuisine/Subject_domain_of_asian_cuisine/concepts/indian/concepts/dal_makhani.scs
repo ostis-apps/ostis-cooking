@@ -9,7 +9,7 @@ concept_dal_makhani
             -> rrel_example: [ Дал-макхани - сытная похлебка из бобовых с множеством специй и сливками, одно из главных блюд индийской кухни. ] (* <-lang_ru;; *);;
         *);;
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_black_mash;;
                 -> concept_vegetable_oil;;
                 -> concept_garlic_paste;;
@@ -21,7 +21,7 @@ concept_dal_makhani
                 -> concept_salt;;
                 -> concept_sugar;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Дал-макхани)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/dal_makhani.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

@@ -10,7 +10,7 @@ concept_rus_herring_under_fur_coat
         *);;
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 -> concept_potato;;
                 -> concept_carrot;;
                 -> concept_beet;;
@@ -21,7 +21,7 @@ concept_rus_herring_under_fur_coat
                 -> concept_salt;;
                 -> concept_black_pepper;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (селёдка под шубой)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/herring_under_fur_coat.txt" (*  => nrel_format: format_txt;;  *);;  *);;
             *);;

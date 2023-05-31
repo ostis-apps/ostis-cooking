@@ -10,7 +10,7 @@
         *);;
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 ->concept_rice;;
                 ->concept_garlic;; 
                 ->concept_sweet_pepper;;
@@ -23,7 +23,7 @@
                 ->concept_green;;
                 ->concept_seasoning;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                 => nrel_idtf: [ Рецепт (фаршированные перцы) ] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/stuffed_peppers.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

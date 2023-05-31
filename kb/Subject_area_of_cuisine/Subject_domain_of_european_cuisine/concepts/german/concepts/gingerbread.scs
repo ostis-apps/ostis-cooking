@@ -23,7 +23,7 @@ concept_gingerbread
 			->concept_ground_cloves;;
 			->concept_orange_peel;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (имбирный пряник)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/gingerbread.txt";;*);;
 	*);;

@@ -18,7 +18,7 @@ concept_hake_in_green_garlic_sauce
 			->concept_fresh_bay_leaf;;
 			->concept_extra_virgin_olive_oil;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (хек в зеленом чесночном соусе)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/hake_in_green_garlic_sauce.txt";;*);;
 	*);;

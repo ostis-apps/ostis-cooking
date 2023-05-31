@@ -20,7 +20,7 @@ concept_bruschetta_with_tomatoes
 			->concept_ground_black_pepper;;
 			->concept_herb;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (брускетта с помидорами)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/bruschetta_with_tomatoes.txt";;*);;
 	*);;

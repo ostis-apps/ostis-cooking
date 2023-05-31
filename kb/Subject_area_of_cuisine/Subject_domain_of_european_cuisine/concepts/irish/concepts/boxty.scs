@@ -19,7 +19,7 @@ concept_boxty
 			->concept_buttermilk;;
 			->concept_butter;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (боксти)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/boxty.txt";;*);;
 	*);;

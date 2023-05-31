@@ -19,7 +19,7 @@ concept_zebra_pie
 			->concept_soda;;
 			->concept_sugar;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (пирог зебра)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/zebra_pie.txt";;*);;
 	*);;

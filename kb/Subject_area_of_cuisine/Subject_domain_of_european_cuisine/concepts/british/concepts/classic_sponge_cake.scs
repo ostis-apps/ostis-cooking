@@ -17,7 +17,7 @@ concept_classic_sponge_cake
 			->concept_sugar;;
 			->concept_wheat_flour;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (классический бисквитный торт)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/classic_sponge_cake.txt";;*);;
 	*);;

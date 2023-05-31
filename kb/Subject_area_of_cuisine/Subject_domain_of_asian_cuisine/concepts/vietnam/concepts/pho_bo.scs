@@ -9,7 +9,7 @@ concept_pho_bo
             -> rrel_example: [ Фо-бо - это блюдо вьетнамской кухни, суп с лапшой, в который при сервировке добавляют говядину или курятину, а иногда — кусочки жареной рыбы или рыбные шарики. ] (* <-lang_ru;; *);;
         *);;
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_beef_bones;;
                 -> concept_onion;;
                 -> concept_ginger;;
@@ -29,7 +29,7 @@ concept_pho_bo
                 -> concept_lime;;
                 -> concept_rice_noodles;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Фо-бо)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/pho_bo.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

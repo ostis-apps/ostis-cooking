@@ -10,7 +10,7 @@
         *);;
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 ->concept_tomato;;
                 ->concept_cucumber;; 
                 ->concept_sweet_bulgarian_pepper;;
@@ -22,7 +22,7 @@
                 ->concept_olive;;
                 ->concept_black_pepper;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (шопский салат)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/shopskiy_salat.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
