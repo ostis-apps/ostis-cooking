@@ -1,0 +1,23 @@
+  
+concept_rus_brushwood
+    <-sc_node_not_relation;
+    => nrel_main_idtf: [brushwood] (*<-lang_en;;*);
+    => nrel_main_idtf: [хворост] (*<-lang_ru;;*);
+    <- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Опр. (хворост) ] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (*
+             -> rrel_example: [хворост - это мучное изделие в виде булочек.] (* <-lang_ru;; *);;
+        *);;
+        => nrel_using_constants: ... (*
+            -> concept_x;;
+        *);;
+    *);
+    <- rrel_instruction: ... (*
+        => nrel_idtf: [Рецепт (хворост)] (* <-lang_ru;; *);;
+        <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/brushwood.txt" (*  => nrel_format: format_txt;;  *);;  *);;
+    *);
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*   -> rrel_example: "file://../../../figures/images/brushwood.jpg" (*  => nrel_format: format_jpg;;  *);;*);;
+    *);;
