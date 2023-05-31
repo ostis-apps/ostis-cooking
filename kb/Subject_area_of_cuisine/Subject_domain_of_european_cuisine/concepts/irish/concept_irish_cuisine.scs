@@ -7,7 +7,7 @@ section_subject_domain_of_irish_cuisine
     ->rrel_key_sc_element: subject_domain_of_irish_cuisine;;
 
 
-subject_domain_of_ukranian_cuisine
+subject_domain_of_irish_cuisine
     =>nrel_main_idtf:[Предметная область ирландской кухни] (* <-lang_ru;;*);
     =>nrel_main_idtf:[Subject domain of irish cuisine] (* <-lang_en;;*);
 	<-subject_domain; 
