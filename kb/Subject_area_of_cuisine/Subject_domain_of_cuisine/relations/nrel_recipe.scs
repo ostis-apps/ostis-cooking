@@ -1,9 +1,15 @@
 nrel_recipe
     <- sc_node_norole_relation;
-    => nrel_system_idtf:[recipe] (* <- lang_en;; *);
-    => nrel_idtf: [recipe](*<- lang_en;;*);
-    => nrel_idtf: [рецепт](*<- lang_ru;;*);
-    => nrel_main_idtf: [рецепт](*<- lang_ru;;*);;
+
+    <-relation;
+    <-norole_relation;
+    <-binary_relation;
+    <-oriented_relation;
+    => nrel_system_idtf:[nrel_recipe] (* <- lang_en;; *);
+    => nrel_idtf: [recipe*](*<- lang_en;;*);
+    => nrel_idtf: [рецепт*](*<- lang_ru;;*);
+    => nrel_main_idtf: [рецепт*](*<- lang_ru;;*);;
+
 
 
 definition -> ...
@@ -11,9 +17,11 @@ definition -> ...
     -> rrel_key_sc_element: nrel_recipe;;
     <= nrel_sc_text_translation: ...
         (*
-            -> [Неролевое бинарное отношение, связывающее блюдо с двойкой, включающей в себя множество ингредиентов и инструкцию по приготовлению.](*<- lang_ru;;*);;
+
+            -> [неролевое бинарное отношение, связывающее блюдо с двойкой, включающей в себя множество ингредиентов и инструкцию по приготовлению.](*<- lang_ru;;*);;
         *);;
-    => nrel_main_idtf: [Опр.(рецепт)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Опр.(рецепт*)](*<- lang_ru;;*);;
+
     <= nrel_using_constants: ...
         (*
             ->concept_ingredient;;

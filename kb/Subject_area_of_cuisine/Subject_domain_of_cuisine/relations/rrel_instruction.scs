@@ -1,18 +1,24 @@
 rrel_instruction
     <- sc_node_role_relation;
-    => nrel_system_idtf:[instruction] (* <- lang_en;; *);
-    => nrel_idtf: [instruction](*<- lang_en;;*);
-    => nrel_idtf: [инструкция](*<- lang_ru;;*);
-    => nrel_main_idtf: [инструкция](*<- lang_ru;;*);;
+
+    <-relation;
+    <-role_relation;
+    <-binary_relation;
+    <-oriented_relation;
+    => nrel_system_idtf:[rrel_instruction] (* <- lang_en;; *);
+    => nrel_idtf: [instruction'](*<- lang_en;;*);
+    => nrel_idtf: [инструкция'](*<- lang_ru;;*);
+    => nrel_main_idtf: [инструкция'](*<- lang_ru;;*);;
 
 definition -> ...
 (*
-    -> rrel_key_sc_element: nrel_recipe;;
+    -> rrel_key_sc_element: rrel_instruction;;
     <= nrel_sc_text_translation: ...
         (*
-            -> [Ролевое бинарное отношение, связывающее связывающее рецепт блюда с последовательностью шагов, необходимых для приготовления блюда](*<- lang_ru;;*);;
+            -> [ролевое бинарное отношение, связывающее рецепт блюда с последовательностью шагов, необходимых для приготовления блюда.](*<- lang_ru;;*);;
         *);;
-    => nrel_main_idtf: [Опр.(инструкция)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Опр.(инструкция')](*<- lang_ru;;*);;
+
     <= nrel_using_constants: ...
         (*
             ->concept_recipe;;

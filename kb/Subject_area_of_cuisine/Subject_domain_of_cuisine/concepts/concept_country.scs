@@ -4,9 +4,9 @@ concept_country
     =>nrel_main_idtf:[country](*<-lang_en;;*);
     
     ->rrel_key_sc_element:...(*
-        <-definition;;
-        => nrel_idtf: [Определение (Страна) ] (* <-lang_ru;; *);;
+        => nrel_idtf: [Опр. (страна)] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (* 
-            -> rrel_example: [Страна -- территория, имеющая политические, географические, культурные, исторические границы] (* <-lang_ru;; *);;   
+            -> rrel_example: [страна - территория, имеющая политические, географические, культурные, исторические границы.] (* <-lang_ru;; *);;   
+
             *);;
     *);;
