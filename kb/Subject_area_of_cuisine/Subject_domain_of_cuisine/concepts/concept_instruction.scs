@@ -5,9 +5,11 @@ concept_instruction
   
     ->rrel_key_sc_element:...(*
         <-definition;;
+
         => nrel_idtf: [Опр. (инструкция)] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (* 
             -> rrel_example: [инструкция - конечная последовательность шагов по приготовлению блюда.] (* <-lang_ru;; *);;   
+
             *);;
         <=nrel_using_constants: concept_dish;;
             

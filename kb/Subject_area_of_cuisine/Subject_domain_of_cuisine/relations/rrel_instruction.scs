@@ -1,5 +1,6 @@
 rrel_instruction
     <- sc_node_role_relation;
+
     <-relation;
     <-role_relation;
     <-binary_relation;
@@ -17,6 +18,7 @@ definition -> ...
             -> [ролевое бинарное отношение, связывающее рецепт блюда с последовательностью шагов, необходимых для приготовления блюда.](*<- lang_ru;;*);;
         *);;
     => nrel_main_idtf: [Опр.(инструкция')](*<- lang_ru;;*);;
+
     <= nrel_using_constants: ...
         (*
             ->concept_recipe;;

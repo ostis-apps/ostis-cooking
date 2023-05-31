@@ -1,5 +1,6 @@
 nrel_protein_content
     <- sc_node_norole_relation;
+
     <-relation;
     <-norole_relation;
     <-binary_relation;
@@ -23,4 +24,4 @@ definition -> ...
         *);;
 *);;
 
-nrel_protein_content=>nrel_first_domain:concept_recipe;;
+

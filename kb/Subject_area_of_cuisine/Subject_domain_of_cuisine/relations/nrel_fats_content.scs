@@ -1,5 +1,6 @@
 nrel_fats_content
     <- sc_node_norole_relation;
+
     <-relation;
     <-norole_relation;
     <-binary_relation;
@@ -24,3 +25,4 @@ nrel_fats_content
 *);;
 
 nrel_fats_content=>nrel_first_domain:concept_recipe;;
+
