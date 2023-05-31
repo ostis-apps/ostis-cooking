@@ -110,7 +110,9 @@ concept_moroccan_cuisine
 
 
 subject_domain_of_senegal_cuisine
+
     =>nrel_main_idtf:[Предметная область сенегальской кухни] (* <-lang_ru;;*);
+
     =>nrel_main_idtf:[Subject domain of senegal cuisine] (* <-lang_en;;*);
 	<-subject_domain; 
 	<-subject_domain_of_african_cuisine; 
@@ -127,7 +129,9 @@ subject_domain_of_senegal_cuisine
         
 concept_senegal_cuisine
     <-sc_node_not_relation;
+
     =>nrel_main_idtf:[сенегальская кухня](*<-lang_ru;;*);
+
     =>nrel_main_idtf:[senegal cuisine](*<-lang_en;;*);
     <-concept_cuisine;
     <-concept_african_cuisine;;       
