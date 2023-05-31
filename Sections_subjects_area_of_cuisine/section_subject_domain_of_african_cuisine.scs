@@ -2,8 +2,8 @@ section_subject_domain_of_african_cuisine
     =>nrel_main_idtf:[Раздел. Предметная область африканской кухни] (* <-lang_ru;;*);
     =>nrel_main_idtf:[Section. Subject domain of african cuisine] (* <-lang_en;;*);
 
-<-atomic_section;;
-->rrel_key_sc_element: subject_domain_of_african_cuisine;;
+<-atomic_section;
+->rrel_key_sc_element: subject_domain_of_african_cuisine;
 
 =>nrel_section_decomposition:{
         section_subject_domain_of_senegal_cuisine;
@@ -13,10 +13,10 @@ section_subject_domain_of_african_cuisine
         section_subject_domain_of_ethiopian_cuisine;
         section_subject_domain_of_morrocan_cuisine;
         section_subject_domain_of_egypt_cuisine;
-        section_subject_domain_of_algerian_cuisine;
+        section_subject_domain_of_algerian_cuisine
     };;
 
-    section_subject_domain_of_senegal_cuisine
+section_subject_domain_of_senegal_cuisine
     =>nrel_main_idtf:[Раздел. Предметная область сенегальской кухни] (* <-lang_ru;;*);
     =>nrel_main_idtf:[Section. Subject domain of senegal cuisine] (* <-lang_en;;*);
     <-atomic_section;

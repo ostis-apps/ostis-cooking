@@ -5,13 +5,6 @@ concept_mallavi
     => nrel_main_idtf: [ Маллави ] (*<-lang_en;;*);;
 
 concept_mallavi
-    <- rrel_key_sc_element: ... (*
-        <- definition;;
-        => nrel_idtf: [Определение ( Маллави ) ] (* <-lang_ru;; *);;
-        <= nrel_sc_text_translation: ... (*
-            -> rrel_example: [ Маллави - салат из сыра фету и зиру. ] (* <-lang_ru;; *);;
-        *);;
-    *);;
     => nrel_recipe: ... (*
         <-rrel_ingredients: ...(*
             -> concept_cheese_feta;; // рисовая мука

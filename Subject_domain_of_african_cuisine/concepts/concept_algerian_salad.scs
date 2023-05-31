@@ -5,13 +5,6 @@ concept_algerian_salad
     => nrel_main_idtf: [ Алжирский салат] (*<-lang_en;;*);;
 
 concept_algerian_salad
-    <- rrel_key_sc_element: ... (*
-        <- definition;;
-        => nrel_idtf: [Определение ( Алжирский салат) ] (* <-lang_ru;; *);;
-        <= nrel_sc_text_translation: ... (*
-            -> rrel_example: [ Алжирский салат - салат, приготовленный из свежих овощей с использованием масла и зелени. ] (* <-lang_ru;; *);;
-        *);;
-    *);    
     => nrel_recipe: ... (*
         <-rrel_ingredients: ...(*
             -> concept_black_pepper;;

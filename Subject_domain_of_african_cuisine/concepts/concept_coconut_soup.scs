@@ -4,14 +4,7 @@ concept_coconut_soup
     => nrel_main_idtf: [ Coconut soup ] (*<-lang_ru;;*);
     => nrel_main_idtf: [ Кокосовый суп ] (*<-lang_en;;*);;
 
-concept_coconut_soup
-    <- rrel_key_sc_element: ... (*
-        <- definition;;
-        => nrel_idtf: [Определение ( Кокосовый суп ) ] (* <-lang_ru;; *);;
-        <= nrel_sc_text_translation: ... (*
-            -> rrel_example: [ Кокосовый суп - фруктовый суп, приготовленный с помощью кокосового молока как главный ингредиент. ] (* <-lang_ru;; *);;
-        *);;
-    *);    
+concept_coconut_soup 
     => nrel_recipe: ... (*
         <-rrel_ingredients: ...(*
             -> concept_canola_oil;;
