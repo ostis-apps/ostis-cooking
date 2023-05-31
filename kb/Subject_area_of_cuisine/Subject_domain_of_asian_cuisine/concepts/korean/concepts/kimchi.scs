@@ -7,9 +7,9 @@ concept_kimchi
         => nrel_idtf: [Определение (Кимчхи) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Кимчхи́ — блюдо корейской кухни, представляющее собой остро приправленные квашеные овощи, в первую очередь, пекинскую капусту. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_beijing_cabbage;;
                 -> concept_salt;;
                 -> concept_water;;
@@ -25,13 +25,11 @@ concept_kimchi
                 -> concept_salted_shrimps;;
                 -> concept_ground_red_korean_pepper;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Кимчхи)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kimchi.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 60_min (*
         => nrel_main_idtf: [60 минут](* <- lang_ru;; *);;
         <- concept_min;;

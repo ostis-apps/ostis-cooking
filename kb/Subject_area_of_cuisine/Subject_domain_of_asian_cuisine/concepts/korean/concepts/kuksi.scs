@@ -7,9 +7,9 @@ concept_kuksi
         => nrel_idtf: [Определение (Куксу) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Куксу - это блюдо корейской кухни, лапша, а также холодный суп с лапшой. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_beef;;
                 -> concept_egg;;
                 -> concept_radish;;
@@ -27,13 +27,11 @@ concept_kuksi
                 -> concept_sugar;;
                 -> concept_salt;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Куксу)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kuksi.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 40_min (*
         => nrel_main_idtf: [40 минут](* <- lang_ru;; *);;
         <- concept_min;;

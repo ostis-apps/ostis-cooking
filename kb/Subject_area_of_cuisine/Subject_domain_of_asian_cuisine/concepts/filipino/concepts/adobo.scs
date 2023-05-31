@@ -7,9 +7,9 @@ concept_adobo
         => nrel_idtf: [Определение (Адобо) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Адобо - это популярное филиппинское блюдо, которое включает мясо, морепродукты или овощи, маринованные в уксусе, соевом соусе, чесноке, лавровом листе и черном перце, которые обжаривают в масле и варят на медленном огне в маринаде. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_chicken_ham;;
                 -> concept_coconut_vinegar;;
                 -> concept_soy_sauce;;
@@ -20,13 +20,11 @@ concept_adobo
                 -> concept_vegetable_oil;;
                 -> concept_ground_black_pepper;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Адобо)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/adobo.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 90_min (*
         => nrel_main_idtf: [90 минут](* <- lang_ru;; *);;
         <- concept_min;;

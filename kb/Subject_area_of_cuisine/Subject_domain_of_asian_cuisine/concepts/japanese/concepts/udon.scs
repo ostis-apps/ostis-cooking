@@ -7,9 +7,9 @@ concept_udon
         => nrel_idtf: [Определение (Удон) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Удон - это один из видов лапши из пшеничной муки, характерных для японской кухни. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_udon_noodles;;
                 -> concept_chicken_fillet;;
                 -> concept_sweet_pepper;;
@@ -21,13 +21,11 @@ concept_udon
                 -> concept_soy_sauce;;
                 -> concept_oyster_sauce;;   
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Удон)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/udon.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 25_min (*
         => nrel_main_idtf: [25 минут](* <- lang_ru;; *);;
         <- concept_min;;

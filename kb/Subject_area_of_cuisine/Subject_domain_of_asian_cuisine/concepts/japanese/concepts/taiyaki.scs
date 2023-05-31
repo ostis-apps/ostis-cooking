@@ -7,9 +7,9 @@ concept_taiyaki
         => nrel_idtf: [Определение (Тайяки) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Тайяки - это японское печенье в форме рыбки. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_wheat_flour;;
                 -> concept_baking_powder;;
                 -> concept_soda;;
@@ -19,13 +19,11 @@ concept_taiyaki
                 -> concept_vegetable_oil;;
                 -> concept_pasta_anko;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Тайяки)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/taiyaki.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 20_min (*
         => nrel_main_idtf: [20 минут](* <- lang_ru;; *);;
         <- concept_min;;

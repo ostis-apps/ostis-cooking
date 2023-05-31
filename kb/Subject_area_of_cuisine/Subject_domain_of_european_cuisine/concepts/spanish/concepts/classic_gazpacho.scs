@@ -22,7 +22,7 @@ concept_classic_gazpacho
 			->concept_olive_oil;;
 			->concept_tabasco;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (классический гаспачо)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/classic_gazpacho.txt";;*);;
 	*);;

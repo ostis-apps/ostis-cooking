@@ -10,7 +10,7 @@
         *);;
     *);
    => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 ->concept_apple;;
                 ->concept_sugar;; //тесто фило 
                 ->concept_water;;//жир
@@ -21,7 +21,7 @@
                 ->concept_vanilla_extract;;
                 ->concept_wripped_cream;;
             *);;
-             <- rrel_instruction: ... (*
+             -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (туфахия)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/tufahije.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

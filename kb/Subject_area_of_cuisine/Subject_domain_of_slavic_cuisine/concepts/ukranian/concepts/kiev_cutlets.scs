@@ -9,7 +9,7 @@ concept_ukr_kiev_cutlets
              -> rrel_example: [киевские котлеты - сочные куриные котлеты с зеленью.] (* <-lang_ru;; *);;*);;
         *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 -> concept_chicken_fillet;;
                 -> concept_egg;;
                 -> concept_butter;;
@@ -22,7 +22,7 @@ concept_ukr_kiev_cutlets
                 -> concept_onion;;
                 -> concept_tarragon;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (киевские котлеты)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/kiev_cutlets.txt";;  *);;
             *);;

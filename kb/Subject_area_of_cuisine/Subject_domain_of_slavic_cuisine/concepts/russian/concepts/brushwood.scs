@@ -11,7 +11,7 @@ concept_rus_brushwood
         
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 ->concept_wheat_flour;;
                 ->concept_egg_yolk;;
                 ->concept_sugar;;
@@ -21,7 +21,7 @@ concept_rus_brushwood
                 ->concept_salt;;
                 ->concept_sugar_powder;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (хворост)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/brushwood.txt" (*  => nrel_format: format_txt;;  *);;  *);;
             *);;  

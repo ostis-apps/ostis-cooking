@@ -23,7 +23,7 @@ concept_sticky_toffee
 			->concept_baking_powder;;
 			->concept_cream;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (стики-тоффи)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/sticky_toffee.txt";;*);;
 	*);;

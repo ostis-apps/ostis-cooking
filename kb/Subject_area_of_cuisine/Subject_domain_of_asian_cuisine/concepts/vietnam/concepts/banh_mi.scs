@@ -7,9 +7,9 @@ concept_banh_mi
         => nrel_idtf: [Определение (Бань-ми) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Бань-ми - это короткий багет с тонкой хрустящей корочкой и мягкой воздушной текстурой во вьетнамской кухне. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_pork_ham;;
                 -> concept_vegetable_oil;;
                 -> concept_chicken_liver;;
@@ -32,13 +32,11 @@ concept_banh_mi
                 -> concept_cucumber;;
                 -> concept_salt;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Бань-ми)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/banh_mi.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 60_min (*
         => nrel_main_idtf: [60 минут](* <- lang_ru;; *);;
         <- concept_min;;

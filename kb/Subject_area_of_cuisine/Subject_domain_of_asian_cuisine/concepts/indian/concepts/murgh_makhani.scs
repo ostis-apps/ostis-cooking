@@ -7,9 +7,9 @@ concept_murgh_makhani
         => nrel_idtf: [Определение (Мург-макхани) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Мург-макхани - это индийское блюдо, а именно слегка запеченная курица в соусе из томатов и с большим количеством специй. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_chicken;;
                 -> concept_yogurt;;
                 -> concept_fellite_leaves;;
@@ -31,13 +31,11 @@ concept_murgh_makhani
                 -> concept_sugar;;
                 -> concept_cilantro;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Мург-макхани)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/murgh_makhani.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 1_h (*
         => nrel_main_idtf: [1 час](* <- lang_ru;; *);;
         <- concept_hour;;

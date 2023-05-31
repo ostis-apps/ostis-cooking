@@ -22,7 +22,7 @@ concept_coddle
 			->concept_oil;;
 			->concept_salt;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (коддл)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/coddle.txt";;*);;
 	*);;

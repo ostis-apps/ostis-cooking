@@ -26,7 +26,7 @@ concept_cake_princess
 			->concept_marzipan;;
 			->concept_butter;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (торт Принцесса)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/cake_princess.txt";;*);;
 	*);;

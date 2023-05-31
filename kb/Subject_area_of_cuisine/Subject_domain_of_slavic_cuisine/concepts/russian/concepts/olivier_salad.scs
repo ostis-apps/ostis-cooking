@@ -12,7 +12,7 @@ concept_rus_olivier_salad
     *);
 
     => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 -> concept_egg;;
                 -> concept_potato;;
                 -> concept_pickles;;      // маринованные огурцы
@@ -22,7 +22,7 @@ concept_rus_olivier_salad
                 -> concept_sour_cream;;
                 -> concept_mayonnaise;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                     => nrel_idtf: [Рецепт (оливье)] (* <-lang_ru;; *);;
                     <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/olivier_salad.txt"  (*  => nrel_format: format_txt;;  *);;  *);;
                 *);;

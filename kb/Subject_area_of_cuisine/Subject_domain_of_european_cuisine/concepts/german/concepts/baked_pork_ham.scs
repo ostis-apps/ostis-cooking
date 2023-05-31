@@ -21,7 +21,7 @@ concept_baked_pork_ham
 			->concept_thyme;;
 			->concept_bay_leaf;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (запеченный свиной окорок)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/baked_pork_ham.txt";;*);;
 	*);;

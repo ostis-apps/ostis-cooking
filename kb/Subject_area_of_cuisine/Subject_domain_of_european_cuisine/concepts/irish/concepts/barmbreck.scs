@@ -24,7 +24,7 @@ concept_barmbreck
 			->concept_baking_powder;;
 			->concept_wheat_flour;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (бармбрэк)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/barmbreck.txt";;*);;
 	*);;

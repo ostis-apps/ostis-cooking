@@ -7,9 +7,9 @@ concept_maguro_sarada
         => nrel_idtf: [Определение (Магуро-сарада) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Магуро-сарада - это японский салат из свежего тунца с овощами и кунжутной заправкой. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_tuna;;
                 -> concept_radish;;
                 -> concept_sweet_pepper;;
@@ -24,13 +24,11 @@ concept_maguro_sarada
                 -> concept_vegetable_oil;;
                 -> concept_ground_red_pepper;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Магуро-сарада)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/maguro_sarada.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 20_min (*
         => nrel_main_idtf: [20 минут](* <- lang_ru;; *);;
         <- concept_min;;

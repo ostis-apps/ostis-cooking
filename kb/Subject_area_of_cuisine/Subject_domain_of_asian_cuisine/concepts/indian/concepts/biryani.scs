@@ -7,9 +7,9 @@ concept_biryani
         => nrel_idtf: [Определение (Бирьяни) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Бирьяни - это индийский пряный рис с добавлением мяса, рыбы, яиц или овощей. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_garlic;;
                 -> concept_ginger;;
                 -> concept_dried_chili_pepper;;
@@ -23,13 +23,11 @@ concept_biryani
                 -> concept_basmati_rice;;
                 -> concept_salt;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Бирьяни)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/biryani.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 100_min (*
         => nrel_main_idtf: [100 минут](* <- lang_ru;; *);;
         <- concept_min;;

@@ -21,7 +21,7 @@ concept_classic_lasagna_with_meat
 			->concept_ready_mad_dry_lasagna_sheets;;
 			->concept_wheat_flour;;
         		*);;
-		<- rrel_instruction: ... (*
+		-> rrel_instruction: ... (*
 			=> nrel_idtf: [Рецепт (лазанья классическая с мясом)] (* <-lang_ru;; *);;
        			<= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/classic_lasagna_with_meat.txt";;*);;
 	*);;

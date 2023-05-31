@@ -7,9 +7,9 @@ concept_pad_thai
         => nrel_idtf: [Определение (Пад-тай) ] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (*
             -> rrel_example: [ Пад-тай - классическое блюдо тайской кухни из обжаренной рисовой вермишели с овощами и ароматным соусом. ] (* <-lang_ru;; *);;
-        *);;
+        *);;*);
         => nrel_recipe: ... (*
-            <- rrel_ingredients: ... (*
+            -> rrel_ingredients: ... (*
                 -> concept_fish_sauce;;
                 -> concept_cane_sugar;;
                 -> concept_tamarinda_pasta;;
@@ -26,13 +26,11 @@ concept_pad_thai
                 -> concept_lime;;
                 -> concept_salt;;
             *);;
-            <- rrel_instruction:...(*
+            -> rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (Пад-тай)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/pad_thai.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;
-        *);;
-    *);
-
+        *);
     => nrel_cooking_time: 30_min (*
         => nrel_main_idtf: [30 минут](* <- lang_ru;; *);;
         <- concept_min;;

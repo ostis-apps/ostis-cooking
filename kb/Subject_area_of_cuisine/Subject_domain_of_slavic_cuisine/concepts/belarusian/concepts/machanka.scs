@@ -11,7 +11,7 @@
         
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:..(*
+            ->rrel_ingredients:..(*
                 ->concept_pork_rribs;;//свиные ребра
                 ->concept_smoked_bacon;;//копченая грудинка
                 ->concept_village_sausage;;//деревенская колбаса
@@ -28,7 +28,7 @@
                 ->concept_baking_powder;;//разрыхлитель
                 ->concept_wheat_flour;;   
             *);;        
-            <-rrel_instruction:...(*
+            ->rrel_instruction:...(*
                 => nrel_idtf: [Рецепт (мачанка)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/machanka.txt"(*  => nrel_format: format_txt;;  *);;  *);;
             *);;

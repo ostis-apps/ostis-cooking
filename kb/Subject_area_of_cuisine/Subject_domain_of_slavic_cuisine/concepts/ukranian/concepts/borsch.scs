@@ -12,7 +12,7 @@ concept_ukr_borsch
     
     *);
     => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 -> concept_meet;;
                 -> concept_potato;;
                 -> concept_white_cabbage;;
@@ -22,7 +22,7 @@ concept_ukr_borsch
                 -> concept_butter;;
                 -> concept_sour_cream;;
             *);;
-             <- rrel_instruction: ... (*
+             -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (украинский борщ)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/borsch.txt";;  *);;
             *);;

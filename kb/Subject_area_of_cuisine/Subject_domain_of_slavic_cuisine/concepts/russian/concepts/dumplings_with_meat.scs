@@ -11,7 +11,7 @@ concept_rus_dumplings_with_meat
        
     *);
      => nrel_recipe: ... (*
-            <-rrel_ingredients:...(*
+            ->rrel_ingredients:...(*
                 -> concept_wheat_flour;;
                 ->concept_water;;
                 ->concept_egg;;
@@ -22,7 +22,7 @@ concept_rus_dumplings_with_meat
                 ->concept_salt;;
                 ->concept_black_pepper;;
             *);;
-            <- rrel_instruction: ... (*
+            -> rrel_instruction: ... (*
                 => nrel_idtf: [Рецепт (пельмени)] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation: ... (* -> rrel_example: "file://../../../figures/html/dumplings_with_meat.txt" (*  => nrel_format: format_txt;;  *);;  *);;
             *);;
