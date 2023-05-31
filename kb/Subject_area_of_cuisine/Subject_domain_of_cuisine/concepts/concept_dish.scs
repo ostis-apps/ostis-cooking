@@ -5,7 +5,8 @@ concept_dish
 
     ->rrel_key_sc_element:...(*
         <-definition;;
-        => nrel_idtf: [Опр. (Блюдо)] (* <-lang_ru;; *);;
+
+        => nrel_idtf: [Опр. (блюдо)] (* <-lang_ru;; *);;
         <= nrel_sc_text_translation: ... (* 
             -> rrel_example: [блюдо - совокупность пищевых продуктов, доведенных до готовности, которые кулинарно оформлены и готовы к употреблению.] (* <-lang_ru;; *);;   
             *);;

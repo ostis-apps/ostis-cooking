@@ -1,5 +1,6 @@
 nrel_cooking_time
     <- sc_node_norole_relation;
+
     => nrel_system_idtf:[nrel_cooking_time] (* <- lang_en;; *);
     => nrel_idtf: [cooking_time*](*<- lang_en;;*);
     => nrel_idtf: [время приготовления*](*<- lang_ru;;*);
@@ -23,3 +24,4 @@ definition -> ...
 *);;
 
 nrel_cooking_time=>nrel_first_domain:concept_recipe;;
+
